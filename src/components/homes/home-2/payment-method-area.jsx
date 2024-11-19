@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 // payment img import 
-import logo from "../../../../public/assets/img/payment-logo/amiyon-logo.png";
+import logo from "../../../../public/assets/img/payment-logo/logo-3.png";
 import payment_img_1 from "../../../../public/assets/img/payment-logo/logo-3.png";
 import payment_img_2 from "../../../../public/assets/img/payment-logo/logo-1.png";
 import payment_img_3 from "../../../../public/assets/img/payment-logo/logo-2.png";
