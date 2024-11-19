@@ -1,0 +1,480 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  13. FEATURE CSS START
+/*----------------------------------------*/
+
+
+.feature-slider-active {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 30px;
+    /* Space for scrollbar */
+}
+
+.feature-slider-active.dragged {
+    cursor: grabbing;
+}
+
+.feature-scrollbar {
+    position: relative;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+.feature-scrollbar .swiper-scrollbar-drag {
+    height: 100%;
+    background-color: white;
+    border-radius: 2px;
+    cursor: grab;
+}
+
+/* Ensure the feature items maintain consistent height */
+.tp-feature__item {
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+/* Optional hover effect */
+.tp-feature__item:hover {
+    transform: translateY(-5px);
+}
+.best-solution-text {
+    position: absolute;
+    top: -40px;
+    /* Adjust this value to position the text above the heading */
+    left: 0;
+    padding: 5px 20px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 4px;
+}
+get-started-btn {
+    // display: inline-block;
+    // padding: 10px 20px;
+    // background-color: blue;
+    // color: white;
+    // font-weight: bold;
+    // text-decoration: none;
+    // border-radius: 4px;
+    // margin-top: 20px;
+
+    width: 178px;
+        /* Set width to 178px */
+        height: 48px;
+        /* Set height to 48px */
+        padding: 6px 30px;
+        /* Add padding to top/bottom and left/right */
+        gap: 10px;
+        /* Space between items (if any inside) */
+        border-radius: 30px 0 0 0;
+        /* Rounded left side, square right side */
+        opacity: 0;
+        /* Make the button fully transparent */
+        display: inline-flex;
+        /* Flexbox layout to handle items inside */
+        align-items: center;
+        /* Vertically center content */
+        justify-content: center;
+        /* Horizontally center content */
+        background-color: blue;
+        /* Button background color */
+        color: white;
+        /* Text color inside button */
+        font-weight: bold;
+        /* Bold text */
+        border: none;
+        /* Remove any default borders */
+        transition: opacity 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: darkblue;
+}
+.tp-feature__content {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Feature Blocks Wrapper */
+.feature-inline-wrapper {
+    display: flex;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    scroll-behavior: smooth;
+    /* Smooth scroll effect */
+    gap: 20px;
+    /* Space between blocks */
+    // padding: 10px;
+    /* Padding for the wrapper */
+    // width: 100%;
+    /* Ensure full width */
+    box-sizing: border-box;
+    /* Include padding in width/height calculation */
+    overflow-y: hidden;
+    /* Hide vertical scroll */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Hide scrollbars for webkit-based browsers (Chrome/Safari) */
+.feature-inline-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+/* Feature Item Styling */
+.tp-feature__item {
+    flex: 0 0 auto;
+    /* Prevent shrinking and fix width */
+    max-width: 372px;
+    /* Set the maximum width for each block */
+    height: 324px;
+    /* Fixed height */
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    /* Semi-transparent background */
+    border: 1px solid #ddd;
+    /* Light gray border */
+    border-radius: 8px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Padding inside each block */
+    text-align: center;
+    /* Center the text */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Position relative for arrow alignment */
+}
+
+/* Style for arrow positioning at bottom-left */
+.tp-feature__link.tp-common-btn {
+    position: absolute;
+    bottom: 10px;
+    /* Position the arrow near the bottom of the block */
+    left: 10px;
+    /* Align the arrow to the left */
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* Optional: Adjust size of the arrow */
+.tp-feature__link.tp-common-btn svg {
+    width: 25px;
+    /* Adjust the size as needed */
+    height: 25px;
+}
+/* Optional: Adjust size of the arrow */
+.tp-feature__link.tp-common-btn svg {
+    width: 25px;
+    /* Adjust the size as needed */
+    height: 25px;
+}
+/* Optional: Aesthetic adjustments for feature image and text */
+.tp-feature__image-text {
+    h3.tp-feature__title {
+        font-size: 1.8rem;
+        // font-weight: bold;
+    }
+
+    p.tp-feature__description {
+        font-size: 1rem;
+        color: #555;
+    }
+}
+
+.tp-feature__image-text img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    /* Box shadow effect */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .tp-feature__item {
+        max-width: 100%;
+        /* Make blocks full width on smaller screens */
+        height: auto;
+        /* Allow blocks to adjust height */
+    }
+}
+
+
+.tp-feature{
+    &__bottom-shape{
+        position: absolute;
+        left: 0;
+        bottom: -125px;
+        z-index: -1;
+        width: 100%;
+        @media #{$xl}{
+            bottom: -15px;
+        }
+        @media #{$lg}{
+            bottom: 22px;
+        }
+        @media #{$md}{
+            bottom: 75px;
+        }
+        @media #{$xs}{
+            bottom: 90px;
+        }
+        & img{
+            width: 100%;
+        } 
+    }
+    &__pt-pb{
+        @media #{$xs}{
+            padding-top: 80px;
+        } 
+    }
+    &__item{
+        background: #FFFFFF;
+        box-shadow: 0px 1px 3px rgba(18, 20, 32, 0.2);
+        border-radius: 30px;
+        padding: 50px 40px;
+        transition: .3s;
+        &:hover{
+            box-shadow: 0px 20px 30px rgba(1, 6, 20, 0.1);
+            border-radius: 30px;
+            & .tp-feature__icon{
+                & img{
+                    transform: scaleX(-1);
+                }
+            }
+        }
+    }
+    &__icon{
+        margin-bottom: 35px;
+        & img{
+            transition: transform .5s ease;
+        }
+    }
+    &__title-sm{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.3;
+        padding-bottom: 20px;
+        @media #{$lg}{
+            font-size: 20px;
+        }
+        @media #{$xs}{
+            font-size: 21px;
+        } 
+    }
+    &__link{
+        display: inline-block;
+        &:hover{
+            & a{
+                box-shadow: inset 0 0 0 30px #6865FF;
+                & svg{
+                    color: var(--tp-common-white);
+                }
+            }
+        }
+        & a{
+            height: 44px;
+            width: 44px;
+            line-height: 41px;
+            border-radius: 50%;
+            background: rgba(41, 93, 251, 0.1);
+            display: inline-block;
+            text-align: center;
+            transition: .4s;
+            & svg{
+                transition: .4s;
+                color: var(--tp-theme-1);
+            }
+        }
+    }
+}
+
+
+.tp-feature-five{
+    &-section-box{
+        & p{
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 26px;
+            color: #5F6168;
+            @media #{$xs}{
+                & br{
+                    display: none;
+                }
+            }
+            & span{
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 26px;
+                color: #141125;
+            } 
+        }
+    }
+    &-wrapper-main{
+        padding-top: 10px;
+        padding-bottom: 70px;
+    }
+    &-wrapper{
+        transition: .3s;
+        &:hover{
+            box-shadow: 0px 30px 60px rgba(32, 33, 36, 0.2);
+            border-radius: 16px;
+            position: relative;
+            z-index: 9;
+        }
+    }
+    &-item{
+        box-shadow: 0px 1px 2px rgba(32, 33, 36, 0.1);
+        border-radius: 16px 0px 0px 16px;
+        padding: 40px;
+        background-color: var(--tp-common-white);
+        overflow: hidden;
+        transition: .3s;
+    }
+    &-icon{
+        height: 85px;
+        width: 85px;
+        line-height: 85px;
+        border-radius: 50%;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    &-title-sm{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        color: #141125;
+        padding-bottom: 5px;
+    }
+    &-content{
+        & p{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 24px;
+            text-align: center;
+            color: #5F6168;
+            padding-bottom: 15px; 
+        }
+    }
+    &-shape-color{
+        height: 100%;
+        width: 100%;
+        background-color: #FF7A59;
+        border-radius: 50%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        transition: .3s;
+        z-index: -1;
+        &-2{
+            background: #FFE01B;
+        }
+        &-3{
+            background: #AAE0F4;
+        }
+        &-4{
+            background: #03363D;
+        }
+    }
+    &-item-1{
+        @media #{$lg,$md}{
+            border-radius: 16px 0px 0px 0px;
+        }
+        &:hover{
+            position: relative;
+            z-index: 5;
+            transform: scale(1.1);
+            border-radius: 16px;
+            box-shadow: none;
+            & .tp-feature-five-shape-color{
+                transform: scale(3.7);
+                top: -125%;
+            }
+        }  
+    }
+    &-item-2{
+        border-radius: 0; 
+        @media #{$lg,$md}{
+            border-radius: 0px 16px 16px 0px;
+        }
+        &:hover{
+            position: relative;
+            z-index: 5;
+            transform: scale(1.1);
+            border-radius: 16px;
+            box-shadow: none;
+            & .tp-feature-five-shape-color{
+                transform: scale(3.5);
+                top: -105%;
+            }
+        }   
+    }
+    &-item-3{
+        border-radius: 0; 
+        @media #{$lg,$md}{
+            border-radius: 0px 0px 0px 16px;
+        }
+        &:hover{
+            position: relative;
+            z-index: 5;
+            transform: scale(1.1);
+            border-radius: 16px;
+            box-shadow: none;
+            & .tp-feature-five-shape-color{
+                transform: scale(3.5);
+                top: -105%;
+            }
+        }   
+    }
+    &-item-4{
+        border-radius: 0px 16px 16px 0px;
+        @media #{$lg,$md}{
+            border-radius: 0px 0px 16px 0px;
+        } 
+        &:hover{
+            position: relative;
+            z-index: 5;
+            transform: scale(1.1);
+            border-radius: 16px;
+            box-shadow: none;
+            & .tp-feature-five-shape-color{
+                transform: scale(3.5);
+                top: -105%;
+            }
+        }   
+    }
+    &-link{
+        & span{
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 24px;
+            text-align: center;
+            color: var(--tp-common-black);
+            @media #{$xs}{
+                font-size: 20px;
+                line-height: 24px;
+            }
+            & a{
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 24px;
+                color: #6B14FA;
+                text-decoration: underline;
+                @media #{$xs}{
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

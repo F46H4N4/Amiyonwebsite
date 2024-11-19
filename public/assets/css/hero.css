@@ -1,0 +1,18 @@
+.tp-hero__join-btn {
+    margin-top: 20px;
+    /* Space between caption and button */
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tp-hero__join-btn:hover {
+    background-color: white;
+    color: #333;
+    /* Adjust to match theme */
+}
