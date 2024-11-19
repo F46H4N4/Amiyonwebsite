@@ -11,7 +11,6 @@ import icon_2 from "../../../../public/assets/img/feature/ecommerce.png";
 import icon_3 from "../../../../public/assets/img/feature/web-hosting_icon.png";
 import icon_4 from "../../../../public/assets/img/feature/buisness_solution.png";
 import bg from "../../../../public/assets/img/feature/Energetic.jpeg";
-// import discussion from "../../../../public/assets/img/feature/frame10.png"; // your image
 
 
 
