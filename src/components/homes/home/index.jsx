@@ -2,11 +2,13 @@ import ScrollToTop from "@/src/hooks/scroll-to-top";
 import Footer from "@/src/layout/footers/footer";
 import Header from "@/src/layout/headers/header";
 import FunFactArea from "@/src/components/homes/home-5/fun-fact-area";
+import firstone from "../../../../public/assets/img/hero/herosection.jpg";
+import HeroBanner from "./hero-banner";
 
 import React from "react";
 import AboutArea from "../../../common/about-area";
 import FeatureArea from "./feature-area";
-import HeroSlider from "./hero-slider";
+import HeroSlider from "./home-cta-area";
 import AdditionalSections from "./additional-sections";
 import AdditionalSections2 from "./additional-sections2";
 import ClientSections from "@/src/layout/footers/footer-3";
@@ -17,9 +19,11 @@ import Firstbg from "./firstbg";
 import BreadcrumbSeven from "@/src/common/breadcrumbs/breadcrumb-7";
 import Portfolio from "@/src/components/project/portfolio";
 import TestimonialArea from "@/src/components/homes/home-2/testimonial-area"
-import ProjectArea from "./project-area";
+import ProjectArea from "./projects-area";
 import RankArea from "./rank-area";
-import ServicesArea from "./services-area";
+// import ServicesArea from "./services-area";
+import ServicesArea from "./serviceslides-area";
+
 import CountArea from "@/src/common/count-area"
 import TestimonialArea2 from "@/src/components/homes/home-3/testimonial-area"
 import Trustportion from "@/src/components/about/company-area"
@@ -32,12 +36,17 @@ const HomeOne = () => {
       <div id="smooth-wrapper">
       <div id="smooth-content">
       <main className="fix">
-      <Firstbg />      
+            {/* <Firstbg />       */}
+      <HeroBanner bg_img="/assets/img/hero/herosection.jpg" />
+
       <FunFactArea />
       <HeroSlider />
-      <FeatureArea />
+      <ServicesArea />    
+
+      {/* <FeatureArea /> */}
       {/* <BreadcrumbSeven /> */}
-      <TestimonialArea />
+            {/* <TestimonialArea /> */}
+      <ProjectArea />
       <ClientSections />
       <TestimonialArea2 />
       <AdditionalSections />

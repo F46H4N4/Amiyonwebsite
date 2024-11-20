@@ -14,7 +14,7 @@ import shape_2 from "../../../../public/assets/img/hero/hero-line-shape-2.png";
 import shape_img_1 from "../../../../public/assets/img/hero/hero-shape-1.png"; 
 import shape_img_2 from "../../../../public/assets/img/hero/hero-shape-2.png"; 
 import hero_thumb_1 from "../../../../public/assets/img/hero/office_space.png";  
-import firstone from "../../../../public/assets/img/hero/firstone.jpg";
+import firstone from "../../../../public/assets/img/hero/herosection.jpg";
 
 // background image import (you can adjust the path)
 // import hero_background from "../../../../public/assets/img/hero/background.jpg";
@@ -58,7 +58,7 @@ const HeroSlider = () => {
                 <div 
                     className="tp-hero__bg p-relative" 
                     style={{ 
-                        // paddingBottom: "150px", 
+                        paddingBottom: "150px", 
                         backgroundImage: `url(${firstone.src})`, // Set the background image
                         backgroundSize: 'cover', // Ensure the background covers the entire area
                         backgroundPosition: 'center', // Center the background image

@@ -62,6 +62,12 @@
 /*---------------------------------
 	typography css start 
 ---------------------------------*/
+.geist {
+    font-family: "Geist", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    /* Set your desired size */
+}
 body {
     font-family: var(--tp-ff-body);
     font-size: 15px;

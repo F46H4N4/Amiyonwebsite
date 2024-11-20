@@ -1,8 +1,8 @@
 
-import team_img_1 from  "../../public/assets/img/team/team-4-1.png"
-import team_img_2 from  "../../public/assets/img/team/team-4-2.png"
-import team_img_3 from  "../../public/assets/img/team/team-4-3.png"
-import team_img_4 from  "../../public/assets/img/team/team-4-4.png"
+import team_img_1 from  "../../public/assets/img/team/depin.png"
+import team_img_2 from  "../../public/assets/img/team/arathi.png"
+import team_img_3 from  "../../public/assets/img/team/lini.png"
+import team_img_4 from  "../../public/assets/img/team/harsha.png"
 import team_img_5 from  "../../public/assets/img/team/team-4-5.png"
 import team_img_6 from  "../../public/assets/img/team/team-4-6.png"
 import team_img_7 from  "../../public/assets/img/team/team-4-7.png"

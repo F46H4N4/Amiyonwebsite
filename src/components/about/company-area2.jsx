@@ -2,7 +2,7 @@ import VideoPopup from '@/src/modals/video-popup';
 import React,{useState} from 'react';
 
 const company_content ={
-    sub_title:  "ABOUT THE COMPANY",
+   //  sub_title:  "ABOUT THE COMPANY",
     title: <>Amiyon is Crafted to  <br />Empower Your Digital <br />Future.</>,
     info_1: <></>,
     info_2: <>Amiyon Solutions has been empowering businessesfor over a decade with innovative digital services. As a trusted partner, we specialize in creating tailored.solutions, from websites to mobile apps, that drive growth and efficiency. Our mission is to combine creativity and technology to deliver exceptional results, helping businesses succeed in the digital age.</>,
@@ -16,7 +16,7 @@ const CompanyArea = () => {
 
     return (
         <>
-            <div className="ab-company-area pt-105 pb-100">
+            <div className="ab-company-area pt-50">
                <div className="container">
                   <div className="row ab-company-section-space">
                      <div className="col-xl-6">

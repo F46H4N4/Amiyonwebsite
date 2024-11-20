@@ -38,21 +38,21 @@ const TestimonialArea = () => {
 
   return (
     <div
-      className="tp-testimonial-2-area pt-110 pb-120"
-      style={{
-        backgroundImage: `url(${bg_img})`,
-          backgroundSize: 'cover',  // Ensure the image covers the entire container
-                  backgroundPosition: 'center',  // Center the background image
-                  backgroundRepeat: 'no-repeat', // Ensure the image does not repeat
-                  height: '940px',    // Adjust the height as needed
-                  width: '100%',      // Ensure full width
-                  display: 'flex',    // Use flexbox to center the blocks
-                  justifyContent: 'center',  // Horizontally center
-                  alignItems: 'center',     // Vertically center
-                  boxSizing: 'border-box',
-    
-      }}
-    >
+          className="tp-testimonial-2-area"
+          style={{
+            backgroundImage: `url(${bg_img})`,
+              backgroundSize: 'cover',  // Ensure the image covers the entire container
+                      backgroundPosition: 'center',  // Center the background image
+                      backgroundRepeat: 'no-repeat', // Ensure the image does not repeat
+                      height: '940px',    // Adjust the height as needed
+                      width: '100%',      // Ensure full width
+                      display: 'flex',    // Use flexbox to center the blocks
+                      justifyContent: 'center',  // Horizontally center
+                      alignItems: 'center',     // Vertically center
+                      boxSizing: 'border-box',
+        
+          }}
+        >
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-8 text-center">
@@ -76,16 +76,16 @@ const TestimonialArea = () => {
               <Slider {...settings} ref={sliderRef} className="tp-testimonial-2-slider-active">
                 {portfolio_data.map((item) => (
                   <div key={item.id} className="tp-testimonial-2-item" style={{   width: "374px",
-    height: "522px",
-    borderRadius: "25px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
-    backgroundColor: "#fff", // Optional: Add a background color
-    padding: "20px",
-    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }}>
+                height: "522px",
+                borderRadius: "25px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "center",
+                textAlign: "center",
+                backgroundColor: "#fff", // Optional: Add a background color
+                padding: "20px",
+                boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" }}>
                    
                       <div className="tp-testimonial-2-img">
                         <Image src={item.thumb_img} alt="Author" width={352} height={325} />

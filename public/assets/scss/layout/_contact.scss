@@ -224,6 +224,8 @@
             font-size: 16px;
             line-height: 26px;   
             color: #5F6168; 
+            font: "geist";
+            font-family: 'normal';
             @media #{$xs}{
                 & br{
                     display: none;
@@ -233,7 +235,7 @@
     }
     &-social-item{
         padding-bottom: 40px;
-        border-bottom: 1px solid #E5E5E5;
+        // border-bottom: 1px solid #E5E5E5;
         & a{
             height: 36px;
             width: 36px;

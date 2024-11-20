@@ -20,7 +20,7 @@ const Service = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <Breadcrumb title_top={"Our"} title_bottom={"Services"} />
+            <Breadcrumb />
             {/* <HeroBanner title="Our" subtitle="Services" bg_img="/assets/img/service/servicefirstpic.png" /> */}
             <ServiceArea /> 
             <FunFactArea />

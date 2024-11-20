@@ -45,7 +45,7 @@ const social_links = [
 const TeamArea = ({bg_style}) => {
     return (
         <>
-           <div className={`tp-team-area ${bg_style ? "grey-bg pt-120" : "blue-bg"} pb-95`}>   
+           <div className={`tp-team-area ${bg_style ? "grey-bg " : "blue-bg"} pb-95`}>   
                <div className="container">
                   <div className={`tp-team-section-wrapper ${bg_style && "tp-team-inner-section"} mb-70`}>
                      <div className="row align-items-end">

@@ -8,7 +8,7 @@ const SignIn = () => {
     <>
       <HeaderSeven />
       <SingnInArea />
-      <FooterFive style_contact={true} style_team={true} />
+      {/* <FooterFive style_contact={true} style_team={true} /> */}
     </>
   );
 };

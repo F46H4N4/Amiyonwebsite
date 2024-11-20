@@ -16,7 +16,7 @@ const Team = () => {
             <TeamArea />
             <CtaArea />
           </main>
-          <FooterFive style_contact={true} style_team={true} />
+          {/* <FooterFive style_contact={true} style_team={true} /> */}
         </div>
       </div>
     </>

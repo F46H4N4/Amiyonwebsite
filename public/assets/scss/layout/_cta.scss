@@ -3,7 +3,12 @@
 /*----------------------------------------*/
 /*  10. CTA CSS START
 /*----------------------------------------*/
-
+@media screen and (max-width: 768px) {
+    .tp-plan-space {
+        padding-top: 0 !important;
+        /* Remove padding-top for smaller screens */
+    }
+}
 .tp-cta{
     &-bg{
         background-repeat: no-repeat;
@@ -318,7 +323,7 @@
 .tp-plan{
     &-space{
         padding-top: 120px; 
-        padding-bottom: 120px;
+        // padding-bottom: 120px;
     }
     &-section-box{
         & p{

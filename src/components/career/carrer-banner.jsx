@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import img_1 from "../../../public/assets/img/career/leftbanner.png";
-import img_2 from "../../../public/assets/img/career/middlebanner.png";
+import img_2 from "../../../public/assets/img/career/midle.jpeg";
 import img_3 from "../../../public/assets/img/career/rightbanner1.png";
 import img_4 from "../../../public/assets/img/career/rightbanner2.png";
 import Image from "next/image";

@@ -18,7 +18,7 @@ const BlogDetails = () => {
             <PostboxArea />
             <Portfolio />
           </main>
-          <FooterFive style_contact={true} style_team={true} bg_style={false} />
+          {/* <FooterFive style_contact={true} style_team={true} bg_style={false} /> */}
         </div>
       </div>
     </>

@@ -59,7 +59,7 @@ const FooterFive = ({style_contact, bg_style=true, style_team}) => {
 
     return (
         <>
-        <div className={`tp-footer__pl-pr ${style_contact && "pt-105"} ${bg_style?'grey-bg-2':''}`}>
+        {/* <div className={`tp-footer__pl-pr ${style_contact && "pt-105"} ${bg_style?'grey-bg-2':''}`}>
                <div className={`tp-footer__area ${style_contact && "p-relative"} tp-footer__tp-border-bottom`}>
                   {style_contact && 
                      <>
@@ -151,7 +151,7 @@ const FooterFive = ({style_contact, bg_style=true, style_team}) => {
                      </div>
                   </div>
                </div>
-            </div>
+            </div> */}
             
         </>
     );

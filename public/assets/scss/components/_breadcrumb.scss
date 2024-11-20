@@ -1,6 +1,11 @@
 @use '../utils' as *;
 
+.about-img-height{
 
+    @media screen and (max-width: 768px) {
+        margin-top: unset !important;
+    }
+}
 .about{
     &-shape-1{
         position: absolute;
@@ -48,10 +53,11 @@
 .about-img{
     &-height{
         min-height: 620px;
-        background-repeat: no-repeat; 
+        // background-repeat: no-repeat; 
         background-size: cover;
         border-radius: 30px;  
-        margin-top: -215px;
+        // height : 400px;
+        // margin-top: -220px;
         overflow: hidden;
         @media #{$xl}{
             min-height: 550px;

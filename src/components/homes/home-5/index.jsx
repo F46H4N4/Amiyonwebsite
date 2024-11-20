@@ -33,7 +33,7 @@ const HomeFive = () => {
             <IntegrationArea />
             <BusinessBox /> */}
           </main>
-          <FooterFive bg_style={false} />
+          {/* <FooterFive bg_style={false} /> */}
         </div>
       </div>
     </ContextProvider>
