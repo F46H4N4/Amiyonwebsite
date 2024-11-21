@@ -30,9 +30,9 @@ const Portfolio = () => {
 
     return (
         <>
-            <div className="portfolio blog-grid-inner mb-80">
+            <div className="portfolio blog-grid-inner pt-50">
                <div className="container">
-                  <div className="row justify-content-center">
+                  {/* <div className="row justify-content-center">
                      <div className="col-lg-8">
                         <div className="tp-about__section-box text-center mb-40">
                            <h4 className="inner-section-subtitle">OVER 150K+ CLIENT</h4>
@@ -40,8 +40,8 @@ const Portfolio = () => {
                            <p>Softuch blog is your knowledge center for everything remote.</p>
                         </div>
                      </div>
-                  </div>
-                  <div className="row">
+                  </div> */}
+                  {/* <div className="row">
                      <div className="col-xl-12">
                         <div className="portfolio-filter masonary-menu text-center mb-35">
                         {categories.map((cate, i) => (
@@ -55,30 +55,30 @@ const Portfolio = () => {
                         ))} 
                         </div>
                      </div>
-                  </div>
+                  </div> */}
                   <div className="row grid blog-grid-inner" ref={dataRef}>
                
                      {items.map((item, i ) => 
                         <div key={i} data-index={i} className="col-xl-4 col-lg-6 col-md-6 mb-30 grid-item cat1 cat4 cat3 cat5">
                            <div className="tp-blog-item">
                               <div className="tp-blog-thumb fix">
-                                 <Link href="/blog-details"><Image src={item.thumb_img} alt="theme-pure" /></Link>
+                                 <Link href="/blog-details"><Image src={item.thumb_img} /></Link>
                               </div>
                               <div className="tp-blog-content">
                                  <div className="tp-blog-meta d-flex align-items-center">
                                     <div className="tp-blog-category category-color-1">
                                        <span>{item.category}</span>
                                     </div>
-                                    <div className="tp-blog-date">
+                                    {/* <div className="tp-blog-date">
                                        <span>{item.date}</span>
-                                    </div>
+                                    </div> */}
                                  </div>
                                  <div className="tp-blog-title-box">
                                     <Link className="tp-blog-title-sm" href="/blog-details">{item.title}</Link>
                                  </div>
                                  <div className="tp-blog-author-info-box d-flex align-items-center">
                                     <div className="tp-blog-avata">
-                                       <Image src={item.avata_img} alt="theme-pure" />
+                                       <Image src={item.avata_img}  />
                                     </div>
                                     <div className="tp-blog-author-info">
                                        <h5>{item.name}</h5>

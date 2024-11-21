@@ -19,6 +19,47 @@ const footer_slider_data = [
     { logo: "/assets/img/logo/Al-Eid-Logistics_logo.png" },
     { logo: "/assets/img/logo/OMAHATLOGO02_logo.png" },
     { logo: "/assets/img/logo/alsabah_logo.png" },
+    { logo: "/assets/img/logo/Metco.png" },
+    { logo: "/assets/img/logo/kuwaitfinance.png" },
+    { logo: "/assets/img/logo/KDD.png" },
+    { logo: "/assets/img/logo/yalfish.png" },
+    { logo: "/assets/img/logo/kfic.png" },
+    { logo: "/assets/img/logo/foot.png" },
+    { logo: "/assets/img/logo/school.png" },
+    { logo: "/assets/img/logo/yadhami.png" },
+    { logo: "/assets/img/logo/outdoor.png" },
+    { logo: "/assets/img/logo/red-mango.png" },
+    { logo: "/assets/img/logo/YOUTOPIA.png" },
+    { logo: "/assets/img/logo/orchid.png" },
+    { logo: "/assets/img/logo/alnour.png" },
+    { logo: "/assets/img/logo/almalek.png" },
+    { logo: "/assets/img/logo/concept.png" },
+    { logo: "/assets/img/logo/arabic.png" },
+    { logo: "/assets/img/logo/hr.png" },
+    { logo: "/assets/img/logo/aldurah.png" },
+    { logo: "/assets/img/logo/sheikh.png" },
+    { logo: "/assets/img/logo/organique.png" },
+    { logo: "/assets/img/logo/candhalls.png" },
+    { logo: "/assets/img/logo/jarakki.png" },
+    { logo: "/assets/img/logo/mv.png" },
+    { logo: "/assets/img/logo/diet.png" },
+    { logo: "/assets/img/logo/codeeight.png" },
+    { logo: "/assets/img/logo/shayf.png" },
+    { logo: "/assets/img/logo/brunchkabab.png" },
+    { logo: "/assets/img/logo/marinekart.png" },
+    { logo: "/assets/img/logo/wings.png" },
+    { logo: "/assets/img/logo/pashmina.png" },
+    { logo: "/assets/img/logo/belmokhba.png" },
+    { logo: "/assets/img/logo/hamarja.png" },
+    { logo: "/assets/img/logo/lavender.png" },
+    { logo: "/assets/img/logo/seenstiches.png" },
+    { logo: "/assets/img/logo/linetwentynine.png" },
+    { logo: "/assets/img/logo/hrarabic.png" },
+    { logo: "/assets/img/logo/star.png" },
+    { logo: "/assets/img/logo/arabiaselection.png" },
+    { logo: "/assets/img/logo/diamond.png" },
+    { logo: "/assets/img/logo/square.png" },
+
 ];
 
 // Slider settings
@@ -64,7 +105,7 @@ const setting = {
 const FooterThree = () => {
     return (
         <>
-            <div className="footer-bottom-content tp-browser-bg-shape pt-150">
+            <div className="footer-bottom-content tp-browser-bg-shape pt-50">
                 <div className="tp-footer-slide pb-80">
                     <div className="container">
                         <div className="row">
@@ -87,7 +128,7 @@ const FooterThree = () => {
                                                 flexDirection: "column",
                                                 alignItems: "center",
                                                 justifyContent: "center",
-                                                height: "100px",
+                                                height: "102.03px",
                                                 width:"211.35px",
                                                 padding: "10px",
                                                 background: "#f9f9f9",
@@ -97,8 +138,8 @@ const FooterThree = () => {
                                             <Image
                                                 src={item.logo}
                                                 alt={`Logo ${i + 1}`}
-                                                width={60}
-                                                height={60}
+                                                width={103.25}
+                                                height={103.36}
                                                 className="footer-slide-logo"
                                             />
                                         </div>

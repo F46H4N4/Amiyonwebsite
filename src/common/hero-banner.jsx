@@ -24,7 +24,7 @@ const HeroBanner = ({ bg_img, title = "Join", subtitle = "Us" }) => {
                             backgroundImage: `url(${bg_img})`,
                             // backgroundSize: 'cover',
                             backgroundPosition: 'center',
-                            height: '100vh', // Full screen height
+                            // height: '100vh', // Full screen height
                             display: 'flex',
                             justifyContent: 'center',
                             alignItems: 'center',

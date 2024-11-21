@@ -14,7 +14,11 @@ import AdditionalSections2 from "./additional-sections2";
 import ClientSections from "@/src/layout/footers/footer-3";
 import Connect from "@/src/components/contact/cta-area";
 import PriceArea from "./price-area";
-import Firstbg from "./firstbg";
+// import PriceArea from "./price-area";
+import CtaArea from "./cta-area";
+import CtaArea2 from "./cta-area2";
+import CtaArea3 from "./cta-area3";
+
 // project/index.jsx
 import BreadcrumbSeven from "@/src/common/breadcrumbs/breadcrumb-7";
 import Portfolio from "@/src/components/project/portfolio";
@@ -36,12 +40,15 @@ const HomeOne = () => {
       <div id="smooth-wrapper">
       <div id="smooth-content">
       <main className="fix">
-            {/* <Firstbg />       */}
+            {/* <Firstbg /> 
+            */}
+      
       <HeroBanner bg_img="/assets/img/hero/herosection.jpg" />
 
       <FunFactArea />
       <HeroSlider />
       <ServicesArea />    
+      <CtaArea3 />    
 
       {/* <FeatureArea /> */}
       {/* <BreadcrumbSeven /> */}
@@ -49,9 +56,12 @@ const HomeOne = () => {
       <ProjectArea />
       <ClientSections />
       <TestimonialArea2 />
-      <AdditionalSections />
+      <CtaArea />    
+      {/* <AdditionalSections /> */}
       <Trustportion />
-      <AdditionalSections2 />
+        <CtaArea2 />    
+
+      {/* <AdditionalSections2 /> */}
       <Connect />
       </main> 
       <Footer />

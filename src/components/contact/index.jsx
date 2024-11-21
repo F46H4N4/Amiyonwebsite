@@ -26,7 +26,7 @@ const Contact = () => {
             <CtaArea />
 
           </main>
-                      <Footer />
+              <Footer />
 
           {/* <FooterFive style_contact={true} style_team={true} /> */}
         </div>

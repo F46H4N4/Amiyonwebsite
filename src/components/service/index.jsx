@@ -12,6 +12,8 @@ import TestimonialArea from "../../common/testimonial-area";
 import CtaArea from "../contact/cta-area";
 import FaqArea from "../homes/home-2/faq-area";
 import ServiceArea from "./service-area";
+import Portfolio from "@/src/components/blog/portfolio";
+
 
 const Service = () => {
   return (
@@ -21,8 +23,10 @@ const Service = () => {
         <div id="smooth-content">
           <main>
             <Breadcrumb />
+
             {/* <HeroBanner title="Our" subtitle="Services" bg_img="/assets/img/service/servicefirstpic.png" /> */}
             <ServiceArea /> 
+            <Portfolio />
             <FunFactArea />
             {/* <CardArea style_service={true} /> */}
             {/* <SalesArea style_service={true} />

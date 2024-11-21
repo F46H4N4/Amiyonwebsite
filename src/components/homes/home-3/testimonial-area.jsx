@@ -1,10 +1,11 @@
 import React, {useRef} from 'react';
 import Slider from 'react-slick';
 
-import testimonial_img_1 from "../../../../public/assets/img/testimonial/feedbacker3.png"
-import testimonial_img_2 from "../../../../public/assets/img/testimonial/testi-3-3.png"
-import testimonial_img_3 from "../../../../public/assets/img/testimonial/testi-3-4.png"
-import testimonial_img_4 from "../../../../public/assets/img/testimonial/testi-3-5.png"
+import testimonial_img_1 from "../../../../public/assets/img/testimonial/new.png"
+import testimonial_img_2 from "../../../../public/assets/img/testimonial/newtwo.png"
+
+import testimonial_img_3 from "../../../../public/assets/img/testimonial/newthree.png"
+import testimonial_img_4 from "../../../../public/assets/img/testimonial/newfour.png"
 import Image from 'next/image';
 
 
@@ -65,7 +66,7 @@ const testimonial_data = [
     },
     {
         id: 2, 
-        img: testimonial_img_1, 
+        img: testimonial_img_2, 
         name: "Yalfish",
         // job_title: "Founder & CEO Dulalix",
         description: <>Choosing Amiyon Solutions for our e-commerce site was transformative. Their design and development expertise created a seamless shopping experience.</>,
@@ -73,7 +74,7 @@ const testimonial_data = [
     },
     {
         id: 3, 
-        img: testimonial_img_1, 
+        img: testimonial_img_3, 
         name: "Affito",
         // job_title: "Founder & CEO Dulalix",
         description: <>Working with Amiyon Solutions for app development was excellent.
@@ -84,7 +85,7 @@ const testimonial_data = [
     },
     {
         id: 4, 
-       img: testimonial_img_1, 
+       img: testimonial_img_4, 
         name: "Affito",
         // job_title: "Founder & CEO Dulalix",
         description: <>Working with Amiyon Solutions for app development was excellent.

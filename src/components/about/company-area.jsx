@@ -16,7 +16,7 @@ const CompanyArea = () => {
 
     return (
        <>
-         <div className="row align-items-center justify-content-center">
+         <div className="row align-items-center justify-content-center pt-80" style={{ width:"690",height:"116",alignItems:'center' }}>
          <div className="col-md-4 col-sm-4 p-0">
             <div className="ab-company-fun-fact-wrap d-flex flex-column justify-content-center align-items-center text-center">
                <div className="ab-company-fun-fact">

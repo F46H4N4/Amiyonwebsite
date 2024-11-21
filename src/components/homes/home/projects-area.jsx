@@ -77,7 +77,7 @@ const ProjectsArea = () => {
   };
 
   return (
-      <div className="portfolio-area pt-5 pb-90"
+      <div className="portfolio-area pb-90"
           style={{
         backgroundImage: 'url(assets/img/testimonial/projectbackground.jpg)', // Path to your background image
         backgroundSize: 'cover', // Ensures the image covers the full container
@@ -117,36 +117,55 @@ const ProjectsArea = () => {
             <div className="tp-project-slider">
               <Slider {...settings}> {/* Implementing React Slick slider */}
                 {items.map((item, i) => (
-                  <div
-                    key={i}
-                    className="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item"
+             <div
+                key={i}
+                className="col-xl-4 col-lg-6 col-md-6 col-sm-6 grid-item"
+                style={{
+                    marginBottom: "30px",
+                    marginLeft: "15px",
+                    marginRight: "15px",
+                }}
+                >
+                <div
+                    className="inner-project-item"
                     style={{
-                      marginBottom: "30px", // Add space below each slide
-                      marginLeft: "15px",   // Add space between slides horizontally
-                      marginRight: "15px",  // Add space between slides horizontally
+                    backgroundColor: "#fff",
+                    borderRadius: "8px",
+                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+                    padding: "20px",
+                    margin: "15px",
+                    maxHeight: "522px", // Set minimum height
+                    display: "flex", // Flexbox for consistent layout
+                    flexDirection: "column", // Stack content vertically
+                    justifyContent: "space-between", // Ensure content spans the full height
                     }}
-                  >
-                    <div className="inner-project-item"  style={{
-                        backgroundColor: "#fff", // White background for each block
-                        borderRadius: "8px", // Optional: Adds rounded corners
-                        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)", // Optional: Adds a subtle shadow
-                        padding: "20px", // Optional: Adds padding inside the block
-                        margin: "15px",          // Adds consistent gap around each block
-
-                    }}
+                >
+                    <div className="inner-project-img fix p-relative">
+                    <Image className="w-100" src={item.thumb_img} alt="theme-pure" />
+                    <div
+                        className="brand-logo"
+                        style={{
+                        position: "absolute",
+                        bottom: "10px",
+                        left: "10px",
+                        zIndex: "10",
+                        background: "rgba(255, 255, 255, 0.8)",
+                        padding: "5px",
+                        borderRadius: "5px",
+                        }}
                     >
-                      <div className="inner-project-img fix p-relative">
-                        <Image className="w-100" src={item.thumb_img} alt="theme-pure" />
-                      </div>
-                      <div className="inner-project-content">
-                        <span className="inner-project-category-title">{item.job_title}</span>
-                        <h4 className="inner-project-title">
-                          <Link href="/project-details">{item.title}</Link>
-                        </h4>
-                        <p>{item.des}</p>
-                      </div>
+                        <Image src={item.brand_logo} alt="brand-logo" />
                     </div>
-                  </div>
+                    </div>
+                    <div className="inner-project-content" style={{ marginTop: "15px" }}>
+                    <span className="inner-project-category-title">{item.job_title}</span>
+                    <h4 className="inner-project-title">
+                        <Link href="/project-details">{item.title}</Link>
+                    </h4>
+                    <p>{item.des}</p>
+                    </div>
+                </div>
+                </div>
                 ))}
               </Slider>
             </div>

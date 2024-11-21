@@ -9,7 +9,7 @@ import LocationIcon from '@/src/svg/location-icon';
 import PhoneIcon from '@/src/svg/phone-icon';
 import RightArrow from '@/src/svg/right-arrow';
 
-import footer_logo from "../../../public/assets/img/logo/amiyon-logo.png";
+import footer_logo from "../../../public/assets/img/logo/amiyon-white-logo.png";
 import { useIsomorphicLayoutEffect } from '@/src/hooks/useIsomorphicEffect';
 
 // footer_content 
@@ -36,26 +36,27 @@ const footer_content = {
             title: "What We Do",
             delay: ".7s",
             links: [
-                { name: "Business", link: "#" },
-                { name: "Technology", link: "#" },
-                { name: "Online Marketing", link: "#" },
-                { name: "Advertising Strategy", link: "#" },
-                { name: "Strategy", link: "#" },
-                { name: "Development", link: "#" },
+                { name: "Web Hosting", link: "#" },
+                { name: "App Development", link: "#" },
+                { name: "Web Development", link: "#" },
+                { name: "E-commerce", link: "#" },
+                { name: "Buisness Solution", link: "#" },
+                // { name: "Development", link: "#" },
             ]
         },
         {
             id: 2,
             cls_1: "col-xl-2 col-lg-2 col-md-6",
             cls_2: "footer-col-3",
-            title: "Other Pages",
+            title: "Pages",
             delay: ".9s",
             links: [
+                { name: "Home", link: "/home" },
                 { name: "About", link: "/about" },
                 { name: "Services", link: "/service" },
-                { name: "How It Works", link: "#" },
-                { name: "Pricing Plan", link: "/price" },
-                { name: "Blog", link: "/blog" },
+                { name: "Career", link: "#" },
+                // { name: "Pricing Plan", link: "/price" },
+                // { name: "Blog", link: "/blog" },
                 { name: "Contact", link: "/contact" },
             ]
         },
@@ -122,36 +123,46 @@ const Footer = () => {
                             <div className="tp-footer__top-space">
                                 <div className="row">
 
-                                    <div className="col-xl-4 col-lg-4 col-md-7 pb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
-                                        <div className="tp-footer__widget footer-col-1">
-                                            <Link href="/" className="tp-footer__widget-logo mb-10">
-                                                <Image
-                                                    src={footer_logo}
-                                                    alt="Footer Logo"
-                                                    width={150} // Set desired width
-                                                    height={50} // Set desired height
-                                                    style={{
-                                                        objectFit: "contain", // Ensures the logo scales without distortion
-                                                    }}
-                                                />
-                                            </Link>
-                                            <div className="tp-footer__text">
-                                                {/* <span>
-                                                    <PhoneIcon />
-                                                </span> */}
-                                                <Link href={`tel:${phone}`}>{phone}</Link>
-                                                <div>
-                                                    {/* <span>
-                                                        <ContactIcon />
-                                                    </span> */}
-                                                    <Link href={`mailto:${contact_mail}`}>{contact_mail}</Link>
-                                                </div>
-                                            </div>
-                                            <div className="tp-footer__social">
-                                                <SocialLinks />
-                                            </div>
+                                   <div className="col-xl-4 col-lg-4 col-md-7 pb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
+                                <div className="tp-footer__widget footer-col-1">
+                                    {/* Logo */}
+                                    <Link href="/" className="tp-footer__widget-logo mb-10">
+                                        <Image
+                                            src={footer_logo}
+                                            alt="Footer Logo"
+                                            width={152}
+                                            height={60.8}
+                                            style={{
+                                                objectFit: "contain", // Ensures the logo scales without distortion
+                                            }}
+                                        />
+                                    </Link>
+
+                                    {/* Contact Info */}
+                                    <div className="tp-footer__text" style={{ color: "#fff" }}>
+                                        {/* Phone Section */}
+                                        <div className="d-flex align-items-center mb-2">
+                                            <span className="me-2">
+                                <PhoneIcon style={{ stroke: "#fff", strokeWidth: "2" }} />
+                                            </span>
+                                    <Link href={`tel:${phone}`} style={{ color: "#fff !important" }}>{phone}</Link>
+                                        </div>
+
+                                        {/* Email Section */}
+                                        <div className="d-flex align-items-center">
+                                            <span className="me-2">
+                                    <ContactIcon style={{ stroke: "#fff", strokeWidth: "2" }} />
+                                            </span>
+                            <Link href={`mailto:${contact_mail}`} style={{ color: "#fff" }}>{contact_mail}</Link>
                                         </div>
                                     </div>
+
+                                    {/* Social Links */}
+                                    <div className="tp-footer__social mt-3">
+                                        <SocialLinks style = {{ color:"#FCFCFC",width:'25.83',height:"25.77",background:"#FCFCFC" }} />
+                                    </div>
+                                </div>
+                            </div>
 
                                     {footer_lisks.map((item, i) =>
                                         <div key={i} className={`${item.cls_1} pb-30 wow tpfadeUp`} data-wow-duration=".9s" data-wow-delay={item.delay}>
@@ -166,27 +177,30 @@ const Footer = () => {
                                         </div>
                                     )}
 
-                                    <div className="col-xl-3 col-lg-3 col-md-6 pb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1s">
-                                        <div className="tp-footer__widget footer-col-4">
-                                            <h4 className="tp-footer__widget-title">Office Address</h4>
-                                            <div className="tp-footer__contact-info tp-footer__icon-space">
-                                                <ul>
-                                                    {locations.map((loc, index) => (
-                                                        <li key={index}>
-                                                            {/* <span>
+                                 <div className="col-xl-3 col-lg-3 col-md-6 pb-30 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1s">
+                                    <div className="tp-footer__widget footer-col-4">
+                                        <h4 className="tp-footer__widget-title">Office Address</h4>
+                                        <div className="tp-footer__contact-info tp-footer__icon-space">
+                                            <ul>
+                                                {locations.map((loc, index) => (
+                                                    <li key={index} className="location-item">
+                                                        <div className="d-flex align-items-start">
+                                                            <span className="icon-container me-3">
                                                                 <LocationIcon />
-                                                            </span> */}
-                                                            <p>
+                                                            </span>
+                                                            <p className="mb-0" style={{ color:'white' }}>
                                                                 <strong>{loc.country}</strong>
                                                                 <br />
                                                                 {loc.address}
                                                             </p>
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
+                                                        </div>
+                                                    </li>
+                                                ))}
+                                            </ul>
                                         </div>
                                     </div>
+                                </div>
+
                                 </div>
                             </div>
                         </div>

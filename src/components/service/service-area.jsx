@@ -6,13 +6,13 @@ import portfolio_data from '@/src/data/services-data';
 const ServiceArea = () => {
     return (
         <>
-            <div className="pb-120 z-index">
+            {/* <div className="pb-120 z-index">
                <div className="container">
                   <div className="row">
                      <div className="col-xl-12">
                         <div className="tp-service-section-wrapper mb-60 d-flex justify-content-between align-items-end">
                            {/* <h3 className="tp-section-title tp-title-anim">Our Portfolio</h3> */}
-                        </div>
+                        {/* </div>
                      </div>
                   </div>
                   <div className="row">
@@ -40,14 +40,14 @@ const ServiceArea = () => {
                                     {/* <Link href={`/portfolio/${item.id}`} className="inline-flex items-center">
                                        Learn More <i className="far fa-arrow-right ml-2"></i>
                                     </Link> */}
-                                 </div>
+                                 {/* </div>
                               </div>
                            </div>
                         </div>
                      ))}
                   </div>
                </div>
-          </div>
+          </div> */} *
           
                <div class="centralized-content pt-0 pb-150">
             <div class="heading">Our Impact!</div>
