@@ -186,8 +186,10 @@ const ProjectsArea = () => {
                     <div className="inner-project-content" style={{ marginTop: "15px" }}>
                     <span className="inner-project-category-title">{item.job_title}</span>
                     <h4 className="inner-project-title">
-                        <Link href="/project-details">{item.title}</Link>
-                    </h4>
+                    <Link href={`${item.slug}-project-details`}>
+                      {item.title}
+                    </Link>
+                  </h4>
                     <p>{item.des}</p>
                     </div>
                 </div>

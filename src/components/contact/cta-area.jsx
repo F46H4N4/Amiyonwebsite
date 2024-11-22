@@ -13,7 +13,7 @@ const CtaArea = () => {
     return (
         <>
             <div>
-                <div className="tp-cta-grey-bg grey-bg-2 "></div>
+                <div className="tp-cta-grey-bg grey-bg-2 " style={{ background:'white' }}></div>
                 <div className="container pt-50">
                     <div className="row">
                         <div className="col-12">

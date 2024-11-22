@@ -25,8 +25,9 @@ const Service = () => {
             <Breadcrumb />
 
             {/* <HeroBanner title="Our" subtitle="Services" bg_img="/assets/img/service/servicefirstpic.png" /> */}
-            <ServiceArea /> 
             <Portfolio />
+            <ServiceArea /> 
+
             <FunFactArea />
             {/* <CardArea style_service={true} /> */}
             {/* <SalesArea style_service={true} />

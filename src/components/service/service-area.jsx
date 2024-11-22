@@ -49,9 +49,18 @@ const ServiceArea = () => {
                </div>
           </div> */} *
           
-               <div class="centralized-content pt-0 pb-150">
-            <div class="heading">Our Impact!</div>
-            <div class="content">
+               <div class="centralized-content pt-0 pb-150"   style={{
+               width: '806px',
+               height: '193px',
+               textAlign: 'center',
+               margin: '0 auto', // Horizontally center the container
+               display: 'flex', // Use flexbox
+               flexDirection: 'column', // Arrange items vertically
+               justifyContent: 'center', // Vertically center the content
+               alignItems: 'center', // Horizontally center the content
+            }}>
+            <div class="heading" tyle ={{ font:'geist',fontWeight:'400px',lineHeight:'30px',fontSize:'82.5px' }}>Our Impact!</div>
+            <div class="content" style ={{ font:'geist',fontWeight:'400px',lineHeight:'30px',fontSize:'20px' }}>
                 For over a decade, Amiyon has delivered impactful,
                 tailored solutions that drive efficiency and growth.
                 We provide high-quality software on time, within budget, and designed to make a difference.

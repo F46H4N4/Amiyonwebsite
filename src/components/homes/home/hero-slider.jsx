@@ -82,7 +82,7 @@ const HeroSlider = () => {
         <>
           
 
-        <div className="tp-feature__area tp-feature__pt-pb pt-0 p-relative"  style={{ marginTop: "0" }}>
+        <div className="tp-feature__area tp-feature pt-50 p-relative"  style={{ marginTop: "0" }}>
         <div className="container">
             <div className="row align-items-center mb-4">
              <div className="col-md-6">

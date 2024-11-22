@@ -40,26 +40,29 @@ const HomeOne = () => {
       <div id="smooth-wrapper">
       <div id="smooth-content">
       <main className="fix">
+        <div className="common-width">
+
             {/* <Firstbg /> 
             */}
       
-            <HeroBanner bg_img="/assets/img/hero/herosection.jpg" style={{ background: 'white' }} />
+      <HeroBanner bg_img="/assets/img/hero/herosection.jpg"/>
 
-      <FunFactArea style={{ background: 'white' }}/>
-      <HeroSlider style={{ background: 'white' }}/>
-      <ServicesArea style={{ background: 'white' }}/>    
-      <CtaArea3 style={{ background: 'white' }}/>    
+      <FunFactArea/>
+      <HeroSlider />
+      <ServicesArea />    
+      <CtaArea3 />    
 
       {/* <FeatureArea /> */}
       {/* <BreadcrumbSeven /> */}
             {/* <TestimonialArea /> */}
-      <ProjectArea style={{ background: 'white' }}/>
-      <ClientSections style={{ background: 'white' }}/>
-      <TestimonialArea2 style={{ background: 'white' }}/>
-      <CtaArea style={{ background: 'white' }}/>    
+      <ProjectArea style/>
+      <ClientSections/>
+      <TestimonialArea2/>
+      <CtaArea/>    
       {/* <AdditionalSections /> */}
-      <Trustportion style={{ background: 'white' }}/>
-        <CtaArea2 style={{ background: 'white' }}/>    
+      <Trustportion />
+        <CtaArea2 />    
+        </div>
 
       {/* <AdditionalSections2 /> */}
       <Connect />

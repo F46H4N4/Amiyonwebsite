@@ -70,7 +70,7 @@ const FeatureArea = () => {
    };
 
    return (
-      <div className="tp-feature__area tp-feature__pt-pb p-relative">
+      <div className="tp-feature__area tp-feature__pt-pb p-relative" style={{ background : 'white' }}>
          <div
             className="feature-inline-wrapper"
             style={{

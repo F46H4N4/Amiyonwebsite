@@ -1,11 +1,11 @@
 @use '../utils' as *;
 
-.about-img-height{
+// .about-img-height{
 
-    @media screen and (max-width: 768px) {
-        margin-top: unset !important;
-    }
-}
+//     @media screen and (max-width: 768px) {
+//         margin-top: unset !important;
+//     }
+// }
 .about{
     &-shape-1{
         position: absolute;

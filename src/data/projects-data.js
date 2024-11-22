@@ -25,6 +25,7 @@ import brand_logo_9 from "../../public/assets/img/project/rectanglemada.png";
 const projects_data = [    
      {
         id: 1,
+        slug: "Madaeats",
         thumb_img: thumb_img_1,
         brand_logo: brand_logo_9, 
         job_title: "DEVELOPMENT, APP DESIGN",
@@ -36,6 +37,7 @@ const projects_data = [
     }, 
     {
         id: 2,
+        slug: "akyas",
         thumb_img: thumb_img_2,
         brand_logo: brand_logo_4, 
         job_title: "DEVELOPMENT, E-COMMERCE",
@@ -47,6 +49,7 @@ const projects_data = [
     }, 
     {
         id: 3,
+        slug: "gopaynet",
         thumb_img: thumb_img_3,
         brand_logo: brand_logo_3, 
         job_title: "DEVELOPMENT, APP DESIGN",
@@ -58,6 +61,7 @@ const projects_data = [
     }, 
     {
         id: 4,
+        slug: "yalfish",
         thumb_img: thumb_img_4,
         brand_logo: brand_logo_1, 
         job_title: "DEVELOPMENT, APP DESIGN",
@@ -69,6 +73,7 @@ const projects_data = [
     }, 
     {
         id: 5,
+        slug: "omhat",
         thumb_img: thumb_img_5,
         brand_logo: brand_logo_2, 
         job_title: "DEVELOPMENT, APP DESIGN",
@@ -80,6 +85,7 @@ const projects_data = [
     }, 
     {
         id: 6,
+        slug: "aldura",
         thumb_img: thumb_img_6,
         brand_logo: brand_logo_6, 
         job_title: "DEVELOPMENT, APP DESIGN",
@@ -91,6 +97,7 @@ const projects_data = [
     }, 
     {
         id: 7,
+        slug: "funtech",
         thumb_img: thumb_img_7,
         brand_logo: brand_logo_7, 
         job_title: "DEVELOPMENT, APP DESIGN",
@@ -102,6 +109,7 @@ const projects_data = [
     }, 
     {
         id: 8,
+        slug: "animok",
         thumb_img: thumb_img_8,
         brand_logo: brand_logo_5, 
         job_title: "DEVELOPMENT, E-COMMERCE",
@@ -112,15 +120,16 @@ const projects_data = [
         filter_id: ["all", "Design Work", "Branding", "Development", "Illusutration", "App Design" ],
     }, 
         {
-        id: 9,
-        thumb_img: thumb_img_9,
-        brand_logo: brand_logo_8, 
-        job_title: "DEVELOPMENT, E-COMMERCE",
-        title: <>KFIC</>,
-        des: <>KFIC offers tailored financing solutions with top-notch, efficient services.</>,
-        delay: ".5s",
-        category: "Development",
-        filter_id: ["all", "Design Work", "Branding", "Development", "Illusutration", "App Design" ],
+            id: 9,
+            slug: "kfic",
+            thumb_img: thumb_img_9,
+            brand_logo: brand_logo_8, 
+            job_title: "DEVELOPMENT, E-COMMERCE",
+            title: <>KFIC</>,
+            des: <>KFIC offers tailored financing solutions with top-notch, efficient services.</>,
+            delay: ".5s",
+            category: "Development",
+            filter_id: ["all", "Design Work", "Branding", "Development", "Illusutration", "App Design" ],
     }, 
    
 

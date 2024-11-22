@@ -10,23 +10,23 @@ const office_data = [
     id: 1,
     cls: "",
     img: img_1,
-    location: "Colombia",
-    address: <>Bogota D.C., Colombia, b. a 181 <br /> C No. 930 Ap 202</>,
+    // location: "Colombia",
+    address: <>Sougandhikam Villa, First  <br /> Thrissur, 680308,Kerala<br></br> 680308,Kerala.</>,
   },
   {
     id: 2,
     cls: "p-relative",
     img: img_2,
     // badge: "Main Office",
-    location: "France",
-    address: <>9 Pearse Street, Kinsale, Cork, <br /> P17 AH66, Ireland</>,
+    // location: "France",
+    address: <>Al Mubarakiya, Oman Street, Behind  <br /> Gulf Bank Head Office,Kuwait City <br></br>15258</>,
   },
 ];
 
 const OfficeLocation = () => {
   return (
     <>
-      <div className="contact-info-area ">
+      <div className="contact-info-area " style={{ background : 'white' }}>
         <div className="container">
             <div className="row mb-50">
             <div className="col-12">
@@ -53,7 +53,7 @@ const OfficeLocation = () => {
                     <h5 className="contact-info-title-sm">
                       <Link href="#">{item.location}</Link>
                     </h5>
-                    <p>{item.address}</p>
+                    <p style={{ font:'geist',fontSize:'16px',lineHeight:'24px',color:'black'}}>{item.address}</p>
                   </div>
                 </div>
               </div>

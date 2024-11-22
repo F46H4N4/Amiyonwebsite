@@ -74,7 +74,8 @@ const Portfolio = () => {
                                     </div> */}
                                  </div>
                                  <div className="tp-blog-title-box">
-                                    <Link className="tp-blog-title-sm" href="/blog-details">{item.title}</Link>
+                                    <Link className="tp-blog-title-sm" style={{ fontFamily: 'geist', fontSize: '20px' }}
+                                       href={`${item.slug}-blog-details`}>{item.title}</Link>
                                  </div>
                                  <div className="tp-blog-author-info-box d-flex align-items-center">
                                     <div className="tp-blog-avata">

@@ -43,6 +43,15 @@
 /*  01. THEME DEFAULT CSS START
 /*----------------------------------------*/
 
+
+.common-width {
+    width: 100%;
+    /* Full width by default */
+    max-width: 100%;
+   
+    /* Include padding in width calculations */
+}
+
 @import url($font-url);
 @media (min-width: 1200px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {

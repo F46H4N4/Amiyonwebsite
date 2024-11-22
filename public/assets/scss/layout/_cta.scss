@@ -9,6 +9,24 @@
 //         /* Remove padding-top for smaller screens */
 //     }
 // }
+// .trust{
+//     width:690px;
+//     text-align: "center";
+//    height: "116px",
+// }
+.tp-plan-area {
+    padding-top: 74px;
+    /* Default padding for larger screens */
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .tp-plan-area {
+        padding-top: 0 !important;
+        padding-bottom : 0 !important;
+        /* Remove padding for smaller screens */
+    }
+}
 .tp-cta{
     &-bg{
         background-repeat: no-repeat;

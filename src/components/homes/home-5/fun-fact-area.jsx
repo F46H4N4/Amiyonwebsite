@@ -4,7 +4,7 @@ import React from "react";
 const FunFactArea = () => {
   return (
     <>
-      <div className="tp-fun-fact-area pt-100 tp-fun-fact-2" style={{ background :'white' }}>
+      <div className="tp-fun-fact-area  tp-fun-fact-2" style={{ background :'white' ,paddingTop:"74px"}}>
         <div className="container">
       
           <div className="row">
