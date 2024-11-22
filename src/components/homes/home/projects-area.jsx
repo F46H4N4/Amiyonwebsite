@@ -175,7 +175,7 @@ const ProjectsArea = () => {
                         bottom: "10px",
                         left: "10px",
                         zIndex: "10",
-                        background: "rgba(255, 255, 255, 0.8)",
+                        // background: "rgba(255, 255, 255, 0.8)",
                         padding: "5px",
                         borderRadius: "5px",
                         }}
