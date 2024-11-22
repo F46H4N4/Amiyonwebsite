@@ -43,23 +43,23 @@ const HomeOne = () => {
             {/* <Firstbg /> 
             */}
       
-      <HeroBanner bg_img="/assets/img/hero/herosection.jpg" />
+            <HeroBanner bg_img="/assets/img/hero/herosection.jpg" style={{ background: 'white' }} />
 
-      <FunFactArea />
-      <HeroSlider />
-      <ServicesArea />    
-      <CtaArea3 />    
+      <FunFactArea style={{ background: 'white' }}/>
+      <HeroSlider style={{ background: 'white' }}/>
+      <ServicesArea style={{ background: 'white' }}/>    
+      <CtaArea3 style={{ background: 'white' }}/>    
 
       {/* <FeatureArea /> */}
       {/* <BreadcrumbSeven /> */}
             {/* <TestimonialArea /> */}
-      <ProjectArea />
-      <ClientSections />
-      <TestimonialArea2 />
-      <CtaArea />    
+      <ProjectArea style={{ background: 'white' }}/>
+      <ClientSections style={{ background: 'white' }}/>
+      <TestimonialArea2 style={{ background: 'white' }}/>
+      <CtaArea style={{ background: 'white' }}/>    
       {/* <AdditionalSections /> */}
-      <Trustportion />
-        <CtaArea2 />    
+      <Trustportion style={{ background: 'white' }}/>
+        <CtaArea2 style={{ background: 'white' }}/>    
 
       {/* <AdditionalSections2 /> */}
       <Connect />

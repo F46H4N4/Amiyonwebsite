@@ -38,7 +38,7 @@ const { title, description, contact_data } = inner_content;
 const CareerInner= () => {
   return (
     <>
-      <div className="contact-inner-area pt-50 pb-130">
+      <div className="contact-inner-area pt-50" style = {{ background:'white' }}>
         <div className="container">
           <div className="row">
             <div className="col-xl-12">

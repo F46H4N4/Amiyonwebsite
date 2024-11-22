@@ -24,8 +24,8 @@ const About = () => {
     <>
       <HeaderSix />
       {/* <Breadcrumb title_top="About"  title_bottom="Softec" /> */}
-      <HeroBanner title="About" subtitle="Us" bg_img="/assets/img/about/aboutusbg.png" />
-      <CompanyArea />
+      <HeroBanner title="About" subtitle="Us" bg_img="/assets/img/about/aboutusbg.png"  style = {{background:'white'}}/>
+      <CompanyArea style={{ background: 'white' }} />
        <Trustportion />
 
       <HomeFive />

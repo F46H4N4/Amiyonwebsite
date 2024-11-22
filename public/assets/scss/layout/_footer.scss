@@ -3,6 +3,31 @@
 /*----------------------------------------*/
 /*  14. FOOTER CSS START
 /*----------------------------------------*/
+// @media (max-width: 768px) {
+//     .tp-footer__area {
+//         text-align: center;
+//         /* Center-align content on smaller screens */
+//     }
+
+//     .tp-footer__widget {
+//         margin: 0 auto;
+//         /* Ensure widgets are centered */
+//     }
+
+//     .tp-footer__contact-info ul,
+//     .tp-footer__social {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         /* Center-align items in contact info and social links */
+//     }
+
+//     // .location-item {
+//     //     text-align: center;
+//     //     /* Center-align location details */
+//     // }
+// }
+
 
 .tp-footer{
     &__widget-logo{

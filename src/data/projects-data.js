@@ -2,7 +2,7 @@
 
 // thumb img import here 
 import thumb_img_1 from "../../public/assets/img/project/madanew.png";
-import thumb_img_2 from "../../public/assets/img/project/affitto.png";
+import thumb_img_2 from "../../public/assets/img/project/akyasnew.png";
 import thumb_img_3 from "../../public/assets/img/project/paynetnew.png";
 import thumb_img_4 from "../../public/assets/img/project/yalfishnew.png";
 import thumb_img_5 from "../../public/assets/img/project/omhatnew.png";
@@ -11,16 +11,16 @@ import thumb_img_7 from "../../public/assets/img/project/funtech.png";
 import thumb_img_8 from "../../public/assets/img/project/animoknew.png";
 import thumb_img_9 from "../../public/assets/img/project/kfic.png";
 // brand logo import here
-import brand_logo_1 from "../../public/assets/img/project/yalfishlogo.png";
+import brand_logo_1 from "../../public/assets/img/project/rectangleyalfish.png";
 
-import brand_logo_2 from "../../public/assets/img/project/ohmatlogo.png";
-import brand_logo_3 from "../../public/assets/img/project/paynetlogo.png";
-import brand_logo_4 from "../../public/assets/img/project/project-inner-brand-5.png";
-import brand_logo_5 from "../../public/assets/img/project/animoklogo.png";
-import brand_logo_6 from "../../public/assets/img/project/aldurahlogo.png";
-import brand_logo_7 from "../../public/assets/img/project/funtechlogo.png";
-import brand_logo_8 from "../../public/assets/img/project/kficlogo.png";
-import brand_logo_9 from "../../public/assets/img/project/madalogo.png";
+import brand_logo_2 from "../../public/assets/img/project/rectangleomhat.png";
+import brand_logo_3 from "../../public/assets/img/project/recatnglepaynet.png";
+import brand_logo_4 from "../../public/assets/img/project/akyas.png";
+import brand_logo_5 from "../../public/assets/img/project/ranimok.png";
+import brand_logo_6 from "../../public/assets/img/project/rectanglealdura.png";
+import brand_logo_7 from "../../public/assets/img/project/rfuntech.png";
+import brand_logo_8 from "../../public/assets/img/project/rkfic.png";
+import brand_logo_9 from "../../public/assets/img/project/rectanglemada.png";
 
 const projects_data = [    
      {
@@ -37,10 +37,10 @@ const projects_data = [
     {
         id: 2,
         thumb_img: thumb_img_2,
-        // brand_logo: brand_logo_4, 
+        brand_logo: brand_logo_4, 
         job_title: "DEVELOPMENT, E-COMMERCE",
-        title: <>Affito</>,
-        des: <>We partnered with Affito, a top boat booking company, to enhance their website and online presence.</>,
+        title: <>Akyas</>,
+        des: <>Akyas is a specialized online platform for packaged supplies.</>,
         delay: ".5s",
         category: "Branding",
         filter_id: ["all", "Design Work", "Branding", "Development", "Illusutration", "App Design" ],

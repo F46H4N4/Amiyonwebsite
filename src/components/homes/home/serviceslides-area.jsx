@@ -187,7 +187,8 @@ const backgroundStyle = {
             textAlign: "center", // Ensures the text is aligned properly
         }}
         >                  {/* <h5 className="inner-section-subtitle pb-10">TIMELINE</h5> */}
-                  <h3 className="ab-brand-title pb-0 mb-0" style={{ color:'white',font:'geist',fontSize:"60px", alignContent:'center'}}>
+                  <h3 className="ab-brand-title pb-0 mb-0" style={{ color:'white',font:'geist',fontSize:"60px", alignContent:'center',lineHeight: "1.4", // Adds spacing between lines
+}}>
                       Our services
                     </h3>
                 </div>

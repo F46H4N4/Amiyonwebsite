@@ -15,7 +15,7 @@ const HeroBanner = ({ bg_img, title = "Building Smart Futures", subtitle = "Deli
     }, []);
 
     return (
-        <div>
+        <div style= {{ background : 'white' }}>
             <div className="row ">
                 <div className="col-12">
                     <div

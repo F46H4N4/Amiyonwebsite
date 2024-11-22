@@ -22,7 +22,7 @@ const CarrerBanner = () => {
   }, []);
   return (
     <>
-      <div className="carrer-banner-area carrer-banner-space pt-150">
+      <div className="carrer-banner-area carrer-banner-space " style = {{ background:'white' }}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-xl-3 col-lg-3 col-md-6">

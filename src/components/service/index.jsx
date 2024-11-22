@@ -33,6 +33,7 @@ const Service = () => {
             <TestimonialArea />
             <FaqArea style_service={true} />
             <CtaArea /> */}
+             {/* <CtaArea /> */}
           </main>
         </div>
         <Footer />

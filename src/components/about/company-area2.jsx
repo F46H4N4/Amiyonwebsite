@@ -16,7 +16,7 @@ const CompanyArea = () => {
 
     return (
         <>
-            <div className="ab-company-area pt-50">
+            <div className="ab-company-area pt-50" style = {{ background : 'white' }}>
                <div className="container">
                   <div className="row ab-company-section-space">
                      <div className="col-xl-6">

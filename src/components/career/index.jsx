@@ -25,10 +25,10 @@ const Career = () => {
         <div id="smooth-content">
           <main>
             {/* <Breadcrumb title_top="Get In" title_bottom="Get In" /> */}
-            <HeroBanner bg_img="/assets/img/career/thirdbg2.jpg" />
-            <ContactInner />
-            <CarrerBanner />
-            <Openings />
+            <HeroBanner bg_img="/assets/img/career/thirdbg2.jpg" style={{ background: 'white' }} />
+            <ContactInner/>
+            <CarrerBanner style={{ background : 'white' }}/>
+            <Openings style={{ background : 'white' }} />
             <Connect />
 
             {/* <OfficeLocation /> */}

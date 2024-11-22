@@ -77,7 +77,7 @@ const ProjectsArea = () => {
   };
 
   return (
-      <div className="portfolio-area pb-90"
+      <div className="portfolio-area pt-50 pb-0"
           style={{
         backgroundImage: 'url(assets/img/testimonial/projectbackground.jpg)', // Path to your background image
         backgroundSize: 'cover', // Ensures the image covers the full container
@@ -85,16 +85,42 @@ const ProjectsArea = () => {
         backgroundRepeat: 'no-repeat', // Prevents the background from repeating
       }}>
           <div className="container">
-        <div style={{
-          display: "flex", // Enables flexbox
-          justifyContent: "center", // Centers horizontally
-          alignItems: "center", // Centers vertically
-          textAlign: "center", // Ensures the text is aligned properly
-              }}>
-                  <h3 className="ab-brand-title pb-5 mb-0" style={{ font: 'geist', fontSize: "60px", alignContent: 'center' }}>
-                    Our Latest 8 Projects
-                  </h3>
-                </div>
+        <div
+        style={{
+          display: "flex",
+          flexDirection: "column", // Stack content vertically
+          justifyContent: "center",
+          alignItems: "center",
+          textAlign: "center",
+        }}
+      >
+        <h3
+          className="ab-brand-title pb-5 mb-0"
+          style={{
+            font: "geist",
+            fontSize: "60px",
+            color: "white",
+            textAlign: "center",
+            wordBreak: "break-word",
+            lineHeight: "1.4", // Adds spacing between lines
+// Ensures wrapping for small screens
+          }}
+        >
+          Our Latest <span style={{ whiteSpace: "nowrap" }}>Projects</span>
+        </h3>
+        <h6
+          style={{
+            color: "white",
+            marginTop: "10px",
+            fontSize: "16px",
+            font:"geist"
+              // Smaller font for subheading
+          }}
+        >
+          We have an experienced team of production and inspection personnel to ensure quality.
+        </h6>
+      </div>
+
         <div className="row">
           <div className="col-xl-12">
             {/* <div className="portfolio-filter masonary-menu text-center mb-35">

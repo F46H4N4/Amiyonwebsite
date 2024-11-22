@@ -35,7 +35,7 @@ const {img_box, sub_title, title, des, feature_list}  = cta_content
 const CtaArea3 = () => {
     return (
         <>
-            <div className= "tp-plan-area tp-plan-space">
+            <div className= "tp-plan-area tp-plan-space pt-50 pb-20 " style={{ background :'white' }}>
                   <div className= "container">
                      <div className= "row align-items-center">
                         <div className= "col-xl-7 col-lg-7 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".3s">
