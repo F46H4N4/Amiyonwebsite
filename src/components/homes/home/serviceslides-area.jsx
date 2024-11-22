@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import { Navigation, Scrollbar } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Link from 'next/link';
+
 import icon_1 from "../../../../public/assets/img/feature/webapp.png";
 import icon_2 from "../../../../public/assets/img/feature/ecommerce.png";
 import icon_3 from "../../../../public/assets/img/feature/web-hosting_icon.png";
@@ -37,6 +39,7 @@ const setting = {
   const journey_data =[
     {
         id: "01", 
+        slug:'web_application',
         icon:  "/assets/img/feature/webapp.png",
         title: <>Web Application</>,
         description: <>We envision sales teams having the tools <br />
@@ -44,6 +47,7 @@ const setting = {
     },
     {
         id: "02", 
+        slug:'e_commerce',
         icon: "/assets/img/feature/ecommerce.png",
         title: <>E Commerce</>,
         description: <>We envision sales teams having the tools <br />
@@ -51,6 +55,7 @@ const setting = {
     },
     {
         id: "03", 
+        slug:'web_hosting',
         icon: "/assets/img/feature/web-hosting_icon.png",
         title: <>Web Hosting</>,
         description: <>We envision sales teams having the tools <br />
@@ -58,6 +63,7 @@ const setting = {
     },
     {
         id: '04', 
+        slug:'buisness_solution',
         icon: "/assets/img/feature/buisness_solution.png",
         title: <>Business Solution</>,
         description: <>We envision sales teams having the tools <br />
@@ -65,6 +71,7 @@ const setting = {
     },
     {
         id: "05", 
+        // slug:
         icon: "Present",
         title: <>Featured On <br /> Envato</>,
         description: <>We envision sales teams having the tools <br />
@@ -239,7 +246,12 @@ const backgroundStyle = {
                           className="journey-icon"
                         />                        </div>
                         <div className="journey-slider-content">
-                          <h4 className="journey-slider-title">{item.title}</h4>
+                          <h4 className="journey-slider-title">
+                            <Link href={`${item.slug}-service-details`}>
+                              {item.title}
+                            </Link>
+
+                          </h4>
                           <p>{item.description}</p>
                         </div>
                       </SwiperSlide>

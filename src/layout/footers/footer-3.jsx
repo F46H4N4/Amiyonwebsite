@@ -18,7 +18,7 @@ const footer_slider_data = [
     { logo: "/assets/img/logo/organique-logo.png" },
     { logo: "/assets/img/logo/Al-Eid-Logistics_logo.png" },
     { logo: "/assets/img/logo/OMAHATLOGO02_logo.png" },
-    { logo: "/assets/img/logo/alsabah_logo.png" },
+    { logo: "/assets/img/logo/sheikh.png" },
     { logo: "/assets/img/logo/Metco.png" },
     { logo: "/assets/img/logo/kuwaitfinance.png" },
     { logo: "/assets/img/logo/KDD.png" },

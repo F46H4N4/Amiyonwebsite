@@ -22,7 +22,8 @@ const Service = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            <Breadcrumb />
+            {/* <Breadcrumb /> */}
+          <HeroBanner title="Our" subtitle="Services" bg_img="/assets/img/service/servicefirstpic.png"  style = {{background:'white',font:'geist'}}/>
 
             {/* <HeroBanner title="Our" subtitle="Services" bg_img="/assets/img/service/servicefirstpic.png" /> */}
             <Portfolio />

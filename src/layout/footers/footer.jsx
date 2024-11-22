@@ -92,7 +92,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className="pb-50 pt-50 fix">
+            <footer className=" pt-50 fix">
                 <div className="tp-footer__pl-pr p-relative">
                     <div className="footer-black-bg tp-gsap-bg"></div>
                     <div className="tp-footer__area pt-50">
@@ -209,18 +209,18 @@ const Footer = () => {
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-md-6 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-                                    <div className="tp-copyright__text">
+                                    {/* <div className="tp-copyright__text">
                                         <span>{copy_right} </span>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="col-md-6 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
                                     <div className="tp-copyright__lang-box  d-flex align-items-center justify-content-md-end justify-content-start">
                                         <div className="tp-copyright__lang">
                                             <ul>
                                                 <li>
-                                                    <button id="tp-copyright__lang-toggle" onClick={() => oppenLan()}>
+                                                    {/* <button id="tp-copyright__lang-toggle" onClick={() => oppenLan()}>
                                                         <span>English (US)<i className="fal fa-angle-down"></i></span>
-                                                    </button>
+                                                    </button> */}
 
                                                     {isOppen &&
                                                         <ul className={`tp-copyright__lang-submenu ${isOppen && "open"}`}>
