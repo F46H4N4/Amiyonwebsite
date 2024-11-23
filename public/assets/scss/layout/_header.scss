@@ -7,6 +7,48 @@
 // {
 // color:black;
 // }
+.contact-us-link {
+    display: inline-flex;
+    /* Use inline-flex for better alignment control */
+    align-items: center;
+    /* Vertically center the text */
+    justify-content: center;
+    /* Horizontally center the text */
+    padding: 12px 20px;
+    /* Adjust padding for proper spacing */
+    border: 1px solid lightgray;
+    /* Slightly thicker border for better visibility */
+    border-radius: 32px;
+    /* Set the border radius for rounded corners */    /* Rounded corners for a better button appearance */
+    font-size: 16px;
+    /* Ensure the font size is appropriate */
+    text-decoration: none;
+    /* Remove underline if present */
+    background-color: transparent;
+    /* Keep the background transparent */
+    line-height: 1;
+    /* Remove extra spacing between lines */
+    font-weight: normal;
+    /* Make text bold */
+}
+
+.contact-us-link span {
+    display: inline-block;
+    /* Ensures the text block behaves as an inline element */
+    text-align: center;
+    /* Center align the text */
+    line-height: normal;
+    /* Normalize the line height */
+}
+
+.contact-us-link:hover {
+    border-color: #333;
+    /* Darken border color on hover */
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Slight background color on hover */
+    color: #333;
+    /* Change text color on hover */
+}
 .header-bottom__logo{
     
     width: 152px;

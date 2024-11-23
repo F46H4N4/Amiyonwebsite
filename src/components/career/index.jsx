@@ -3,7 +3,7 @@ import Footer from "@/src/layout/footers/footer";
 
 import HeaderSix from "@/src/layout/headers/header-6";
 import React from "react";
-import Breadcrumb from "../../common/breadcrumbs/breadcrumb";
+import Breadcrumb from "../../common/breadcrumbs/breadcrumb-10";
 // import ContactFormArea from ".@/src/components/contact/contact-form-area";
 import ContactInner from "./career-inner";
 import CarrerBanner  from "@/src/components/career/carrer-banner";
@@ -24,8 +24,8 @@ const Career = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            {/* <Breadcrumb title_top="Get In" title_bottom="Get In" /> */}
-            <HeroBanner bg_img="/assets/img/career/thirdbg2.jpg" style={{ background: 'white' }} />
+            <Breadcrumb/>
+            {/* <HeroBanner bg_img="/assets/img/career/thirdbg2.jpg" style={{ background: 'white' }} /> */}
             <ContactInner/>
             <CarrerBanner style={{ background : 'white' }}/>
             <Openings style={{ background : 'white' }} />

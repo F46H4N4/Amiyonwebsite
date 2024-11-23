@@ -32,11 +32,10 @@ const HeaderFive = () => {
                         <div className="col-xxl-2 col-xl-3 col-lg-2 col-md-8 col-6">
                            <div className="header-bottom__right header-five__btn d-flex align-items-center justify-content-end">
                               <div className="header-bottom__btn d-flex align-items-center">
-                                 <Link className="tp-btn-black inner-color tp-btn-hover alt-color-black d-none d-md-inline-block" 
-                                       href="/contact">
-                                    <span className="white-text">Contact Us</span>
-                                    <b></b>
-                                 </Link>
+                              <Link className="tp-btn-white inner-color tp-btn-hover alt-color-black d-none d-md-inline-block contact-us-link" href="/contact">
+                                 <span className="white-text">Contact Us</span>
+                                 <b></b>
+                              </Link>
                                  <a className="header-bottom__bar tp-menu-bar d-lg-none" 
                                   onClick={() => setSidebarOpen(true)}
                                  ><i className="fal fa-bars"></i></a>

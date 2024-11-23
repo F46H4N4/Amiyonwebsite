@@ -1,15 +1,14 @@
 import { AppContext } from "@/src/context/ContextProvider";
 import VideoPopup from "@/src/modals/video-popup";
-import React, {useState, useRef, useContext} from "react";
-
+import React, { useState, useRef, useContext } from "react";
 
 const VideoArea = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-  const videoEl = useRef(null); 
-  const {handleMouseEnter,handleMouseLeave} = useContext(AppContext); 
-  
+  const videoEl = useRef(null);
+
+  const { handleMouseEnter = () => {}, handleMouseLeave = () => {} } = useContext(AppContext) || {};
+
   return (
- 
     <>
       <div className="tp-vedio-area p-relative pt-120">
         <div className="container-fluid">
@@ -26,25 +25,24 @@ const VideoArea = () => {
           </div>
           <div className="row">
             <div className="col-12">
-              <div className="tp-vedio-wrap" >
+              <div className="tp-vedio-wrap">
                 <a
-                  className="popup-video tp-cursor-point-area" 
+                  className="popup-video tp-cursor-point-area"
                   onClick={() => setIsVideoOpen(true)}
-                  onMouseEnter={() => handleMouseEnter(true)}
-                  onMouseLeave={ () => handleMouseLeave(false)}
+                  onMouseEnter={handleMouseEnter}
+                  onMouseLeave={handleMouseLeave}
                 >
-                  <video                  
-                  className="play-video" 
-                  id="myVideo" 
-                  autoPlay 
-                  loop 
-                  playsInline
-                  muted
-                  alt="All the devices"
-                  src="http://weblearnbd.net/tphtml/videos/softec/softec-video.mp4"
-                  ref={videoEl}
-                  > 
-                  </video>
+                  <video
+                    className="play-video"
+                    id="myVideo"
+                    autoPlay
+                    loop
+                    playsInline
+                    muted
+                    alt="All the devices"
+                    src="https://videocdn.cdnpk.net/videos/8e9b0e80-9c40-570a-9ecd-bdddac0f1508/horizontal/previews/clear/large.mp4?token=exp=1732353129~hmac=be6dc24d6db6b839c529e0496673019b33cf48035c74e2ed9a89665fd93ec544"
+                    ref={videoEl}
+                  ></video>
                 </a>
               </div>
             </div>

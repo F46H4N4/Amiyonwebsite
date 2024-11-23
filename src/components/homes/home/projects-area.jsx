@@ -20,6 +20,8 @@ const ProjectsArea = () => {
     slidesToScroll: 1,
     dots: true,       // Enable dot navigation
     arrows: false,    // Disable arrows
+    autoplay: true,   // Enable autoplay
+    autoplaySpeed: 3000, // Time between slide transitions (in ms)
     customPaging: function (i) {
       return (
         <div
@@ -186,7 +188,7 @@ const ProjectsArea = () => {
                     <div className="inner-project-content" style={{ marginTop: "15px" }}>
                     <span className="inner-project-category-title">{item.job_title}</span>
                     <h4 className="inner-project-title">
-                    <Link href={`${item.slug}-project-details`}>
+                      <Link href={`${item.slug}-project-details`}>
                       {item.title}
                     </Link>
                   </h4>

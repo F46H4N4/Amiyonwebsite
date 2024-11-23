@@ -37,19 +37,19 @@ const HeroArea = () => {
                            <div className="tp-hero-five-section-wrap">
                               <div className="tp-hero-five-section-box z-index">
                                  <h3 className="tp-hero-title-5 hero-text-anim-2">
-                                    <i><i className="child-2">Offer The <br /></i></i>
+                                    <i><i className="child-2">Your Vision,Our Code<br /></i></i>
                                     <i>
                                        <i className="child-2">
-                                          Best <span className="child-1 p-relative">Business 
+                                           <span className="child-1 p-relative">Building 
                                           <LineShapTwo />  
                                           </span>  
                                           <br /> 
                                        </i>
                                     </i>
-                                    <i><i className="child-2"><span className="child-2">Management</span> With <br /></i></i>
-                                    <i><i className="child-2">Software</i></i>
+                                    <i><i className="child-2"><span className="child-2">Tomorrow's </span>  Digital <br /></i></i>
+                                    <i><i className="child-2">Solutions</i></i>
                                  </h3>
-                                 <p className="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">A simple solution for building the optimal work <br /> schedule for your business.</p>
+                                 <p className="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">Empowering Businesses with Future-Ready Technology Solutions.</p>
                               </div>
                               <div className="tp-hero-five-btn-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
                                  <Link className="tp-btn-blue-lg purple-bg circle-effect mr-15 mb-20" href="/">Get Started</Link>

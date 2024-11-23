@@ -1,4 +1,4 @@
-import Breadcrumb from "@/src/common/breadcrumbs/breadcrumb";
+import Breadcrumb from "@/src/common/breadcrumbs/breadcrumb-9";
 import FunFactArea from "@/src/components/homes/home-5/fun-fact-area";
 import Footer from "@/src/layout/footers/footer";
 
@@ -22,8 +22,8 @@ const Service = () => {
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
-            {/* <Breadcrumb /> */}
-          <HeroBanner title="Our" subtitle="Services" bg_img="/assets/img/service/servicefirstpic.png"  style = {{background:'white',font:'geist'}}/>
+            <Breadcrumb />
+          {/* <HeroBanner title="Our" subtitle="Services" bg_img="/assets/img/service/servicebanner.jpg"  style = {{background:'white',font:'geist'}}/> */}
 
             {/* <HeroBanner title="Our" subtitle="Services" bg_img="/assets/img/service/servicefirstpic.png" /> */}
             <Portfolio />

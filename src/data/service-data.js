@@ -7,13 +7,13 @@ import ServiceIconsix from "../svg/service/service-icon-6"
 import ServiceIconSeven from "../svg/service/service-icon-7"
 
 // images import  
-import img_1 from "../../public/assets/img/service/firstblock.png";
+import img_1 from "../../public/assets/img/service/sv-icon-1.png";
 import img_2 from "../../public/assets/img/service/sv-icon-2.png";
 import img_3 from "../../public/assets/img/service/sv-icon-3.png";
 import img_4 from "../../public/assets/img/service/sv-icon-4.png";
 import img_5 from "../../public/assets/img/service/sv-icon-5.png";
 // for home 04
-import icon_1 from "../../public/assets/img/service/firstblock.png"
+import icon_1 from "../../public/assets/img/service/sv-icon-1.png"
 import icon_2 from "../../public/assets/img/service/sv-icon-4-2.png"
 import icon_3 from "../../public/assets/img/service/sv-icon-4-3.png"
 import icon_4 from "../../public/assets/img/service/sv-icon-4-4.png"

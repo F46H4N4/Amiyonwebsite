@@ -8,13 +8,13 @@ import RightArrow from '@/src/svg/right-arrow';
 import img from "../../../../public/assets/img/service/sv-dashbord.png" 
 
 const service_content = {
-    title: "Explore Our Data Services",
-    sub_title: <>More than 15,000 companies trust and choose Itech</>,
+    title: "Our Core Solutions & Services",
+    // sub_title: <>More than 15,000 companies trust and choose Itech</>,
 
-    bg_img: "/assets/img/service/sv-bg.jpg",
-    title_2: <>Data Analysis <br /> Tools & Methods</>,
-    des: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
-    btn_text: "Work with Us",
+    // bg_img: "/assets/img/service/sv-bg.jpg",
+    // title_2: <>Data Analysis <br /> Tools & Methods</>,
+    // des: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
+    // btn_text: "Work with Us",
 
     
 
@@ -27,7 +27,7 @@ const ServicesArea = () => {
    useTitleAnimation(titleRef)
     return (
         <>
-            <div className="tp-service__area p-relative fix">
+            <div className="tp-service__area p-relative fix" style={{ background : 'white' }}>
                <div className="tp-service__grey-shape grey-bg"></div>
                <div className="container">
                   <div className="row justify-content-center">
@@ -58,7 +58,7 @@ const ServicesArea = () => {
                             </div>
                         </div>
                     )}
-
+{/* 
                      <div className="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1s">
                         <div className="tp-service__dashboard" 
                         style={{backgroundImage: `url(${bg_img})`}} >
@@ -75,7 +75,7 @@ const ServicesArea = () => {
                               src={img} alt="theme-pure" />
                            </div>
                         </div>
-                     </div>
+                     </div> */}
 
                   </div>
                </div>

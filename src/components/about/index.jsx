@@ -7,7 +7,7 @@ import Footer from "@/src/layout/footers/footer";
 
 import HeaderSix from "@/src/layout/headers/header-6";
 import React from "react";
-import Breadcrumb from "../../common/breadcrumbs/breadcrumb";
+import Breadcrumb from "../../common/breadcrumbs/breadcrumb-11";
 import HeroBanner from "../../common/hero-banner";
 import CtaArea from "../contact/cta-area";
 import TeamArea from "../homes/home-4/team-area";
@@ -23,8 +23,8 @@ const About = () => {
   return (
     <>
       <HeaderSix />
-      {/* <Breadcrumb title_top="About"  title_bottom="Softec" /> */}
-      <HeroBanner title="About" subtitle="Us" bg_img="/assets/img/about/aboutusbg.png"  style = {{background:'white'}}/>
+      <Breadcrumb />
+      {/* <HeroBanner title="About" subtitle="Us" bg_img="/assets/img/about/aboutusbg.png"  style = {{background:'white'}}/> */}
       <CompanyArea style={{ background: 'white' }} />
        <Trustportion />
 

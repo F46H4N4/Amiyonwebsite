@@ -3,22 +3,20 @@ import Link from "next/link";
 import React, { useContext, useEffect, useRef } from "react";
 
 const AnimateMouse = () => {
-  const {isEnter} = useContext(AppContext);
+  const { isEnter } = useContext(AppContext); // Get context state
   const eRef = useRef(null);
   const tRef = useRef(null);
-  let n,
-    i = 0,
-    o = false;
 
   useEffect(() => {
-    const handleMouseMove = (s) => {
-      if (!o) {
-        tRef.current.style.transform = `translate(${s.clientX}px, ${s.clientY}px)`;
+    const handleMouseMove = (event) => {
+      if (tRef.current) {
+        tRef.current.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
       }
-      eRef.current.style.transform = `translate(${s.clientX}px, ${s.clientY}px)`;
-      n = s.clientY;
-      i = s.clientX;
+      if (eRef.current) {
+        eRef.current.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+      }
     };
+
     window.addEventListener("mousemove", handleMouseMove);
 
     return () => {
@@ -28,17 +26,22 @@ const AnimateMouse = () => {
 
   return (
     <React.Fragment>
+      {/* Outer Cursor */}
       <div
         ref={eRef}
         style={{ visibility: "visible" }}
         className={`mouseCursor cursor-outer ${isEnter ? "cursor-big" : ""}`}
       ></div>
+      
+      {/* Inner Cursor */}
       <div
         ref={tRef}
-        className={`mouseCursor cursor-inner ${isEnter ? "cursor-big" : ""}`}
         style={{ visibility: "visible" }}
+        className={`mouseCursor cursor-inner ${isEnter ? "cursor-big" : ""}`}
       >
-        <Link  href="#"><i className="fas fa-play"></i></Link>
+        <Link href="#">
+          <i className="fas fa-play"></i>
+        </Link>
       </div>
     </React.Fragment>
   );
