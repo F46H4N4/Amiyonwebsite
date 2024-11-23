@@ -7,11 +7,11 @@ import ServiceIconsix from "../svg/service/service-icon-6"
 import ServiceIconSeven from "../svg/service/service-icon-7"
 
 // images import  
-import img_1 from "../../public/assets/img/service/sv-icon-1.png";
-import img_2 from "../../public/assets/img/service/sv-icon-2.png";
-import img_3 from "../../public/assets/img/service/sv-icon-3.png";
-import img_4 from "../../public/assets/img/service/sv-icon-4.png";
-import img_5 from "../../public/assets/img/service/sv-icon-5.png";
+import img_1 from "../../public/assets/img/service/webdev.png";
+import img_2 from "../../public/assets/img/service/expert.png";
+import img_3 from "../../public/assets/img/service/smart.png";
+import img_4 from "../../public/assets/img/service/host.png";
+import img_5 from "../../public/assets/img/service/mobile.png";
 // for home 04
 import icon_1 from "../../public/assets/img/service/sv-icon-1.png"
 import icon_2 from "../../public/assets/img/service/sv-icon-4-2.png"
@@ -19,7 +19,7 @@ import icon_3 from "../../public/assets/img/service/sv-icon-4-3.png"
 import icon_4 from "../../public/assets/img/service/sv-icon-4-4.png"
 
 // for home 05
-import img_6 from "../../public/assets/img/service/sv-icon-5-1.png";
+import img_6 from "../../public/assets/img/service/storetwo.png";
 import img_7 from "../../public/assets/img/service/sv-icon-5-2.png";
 import img_8 from "../../public/assets/img/service/sv-icon-5-3.png";
 import img_9 from "../../public/assets/img/service/sv-icon-5-4.png";
@@ -39,40 +39,48 @@ const  service_data = [
         id: 1,
         icon: img_1,
         img: img_1,
-        title: "AI Data Analysis",
-        description: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
+        title: "Professional Web Development Services",
+        // description: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
         delay: ".4s",
     },
     {
         id: 2,
         icon: img_2,
         img: img_2,
-        title: "Machine Learning",
-        description: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
+        title: "Expert Teams for Your Business Needs",
+        // description: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
         delay: ".6s",
     },
     {
         id: 3,
         icon: img_3,
         img: img_3,
-        title: "Data Visualization",
-        description: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
+        title: "Smart Solutions for Business Excellence",
+        // description: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
         delay: ".7s",
     },
     {
         id: 4,
         icon: img_4,
         img: img_4,
-        title: "Business Intelligence",
-        description: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
+        title: "Fast, Secure, and Reliable Hosting Services",
+        // description: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
         delay: ".8s",
     },
     {
         id: 5,
         icon: img_5,
         img: img_5,
-        title: "Artificial Intelligence",
-        description: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
+        title: "Mobile Solutions That Drive User Growth",
+        // description: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
+        delay: ".9s",
+    },
+     {
+        id: 6,
+        icon: img_5,
+        img: img_6,
+        title: "Build Your Online Store Today",
+        // description: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
         delay: ".9s",
     },
 

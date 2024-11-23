@@ -40,11 +40,11 @@ const ServicesArea = () => {
                   </div>
                   <div className="row">
 
-                    {service_data.slice(0,5).map((item, i)  => 
+                    {service_data.slice(0,6).map((item, i)  => 
                         <div key={i} className="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay={item.delay}>
                             <div className="tp-service__item mb-30">
                                 <div className="tp-service__icon">
-                                    <Image src={item.img} alt="theme-pure" />
+                                    <Image src={item.img} alt="theme-pure" style ={{ width:'39px', height:'43.98px' }} />
                                 </div>
                                 <div className="tp-service__content">
                                     <h3 className="tp-service__title-sm tp-yellow-color"><Link href="/service-details">{item.title}</Link></h3>

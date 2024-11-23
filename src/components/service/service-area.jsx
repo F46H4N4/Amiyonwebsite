@@ -14,7 +14,7 @@ const ServiceArea = () => {
         <div
           className="heading"
           style={{
-            fontFamily: 'geist',
+            // fontFamily: 'geist',
             fontWeight: '400',
             lineHeight: '1.2',
             fontSize: '82.5px', // Default font size for larger screens
@@ -25,7 +25,7 @@ const ServiceArea = () => {
         <div
           className="content"
           style={{
-            fontFamily: 'geist',
+            // fontFamily: 'geist',
             fontWeight: '400',
             lineHeight: '1.5',
             fontSize: '20px', // Default font size for larger screens

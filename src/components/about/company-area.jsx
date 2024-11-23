@@ -23,12 +23,14 @@ const CompanyArea = () => {
           background: 'white',
           padding: '20px',
           boxSizing: 'border-box',
+         color: "#620AD0",
+          paddingBottom :"74px"
           
         }}
       >
          <div className="col-md-4 col-sm-4 p-0">
             <div className="ab-company-fun-fact-wrap d-flex flex-column justify-content-center align-items-center text-center">
-               <div className="ab-company-fun-fact">
+               <div className="ab-company-fun-fact" style ={{ color:"#620AD0"}}>
                <span>Trusted by</span>
                <h4>100<em>+</em></h4>
                <p>Clients</p>
@@ -38,7 +40,7 @@ const CompanyArea = () => {
 
          <div className="col-md-4 col-sm-4 p-0">
             <div className="ab-company-fun-fact-wrap d-flex flex-column justify-content-center align-items-center text-center">
-               <div className="ab-company-fun-fact">
+               <div className="ab-company-fun-fact" style ={{ color:"#620AD0"}}>
                <span>Experience in</span>
                <h4>50<em>+</em></h4>
                <p>Industries</p>
@@ -48,7 +50,7 @@ const CompanyArea = () => {
 
          <div className="col-md-4 col-sm-4 p-0">
             <div className="ab-company-fun-fact-wrap d-flex flex-column justify-content-center align-items-center text-center">
-               <div className="ab-company-fun-fact">
+               <div className="ab-company-fun-fact" >
                <span>IN</span>
                <h4>24<em>/</em>7</h4>
                <p>Support</p>

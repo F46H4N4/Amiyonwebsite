@@ -51,10 +51,10 @@ const HeroArea = () => {
                                  </h3>
                                  <p className="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">Empowering Businesses with Future-Ready Technology Solutions.</p>
                               </div>
-                              <div className="tp-hero-five-btn-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
+                              {/* <div className="tp-hero-five-btn-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
                                  <Link className="tp-btn-blue-lg purple-bg circle-effect mr-15 mb-20" href="/">Get Started</Link>
                                  <Link className="tp-btn-grey mb-20" href="/service-details">Try a Damo</Link>
-                              </div>
+                              </div> */}
                            </div>
                         </div>
                      </div>
@@ -63,12 +63,12 @@ const HeroArea = () => {
                      <div className="tp-hero-five-2-thumb">
                         <Image src={shape_4} className="tp-hero-five-2-thumb-inner" alt="theme-pure" />
                      </div>
-                     <div className="tp-hero-five-2-sub-img-1 d-none d-md-block">
+                     {/* <div className="tp-hero-five-2-sub-img-1 d-none d-md-block">
                         <Image src={shape_5} alt="theme-pure" />
-                     </div>
-                     <div className="tp-hero-five-2-sub-img-2 d-none d-md-block">
+                     </div> */}
+                     {/* <div className="tp-hero-five-2-sub-img-2 d-none d-md-block">
                         <Image src={shape_6} alt="theme-pure" />
-                     </div>
+                     </div> */}
                   </div>
                </div>
         </>

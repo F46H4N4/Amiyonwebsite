@@ -34,6 +34,7 @@ import CountArea from "@/src/common/count-area"
 import TestimonialArea2 from "@/src/components/homes/home-3/testimonial-area"
 import Trustportion from "@/src/components/about/company-area"
 import VideoArea from "@/src/components/homes/home-5/video-component";
+import Section from "@/src/components/homes/home-5/video-area";
 
 // import TestimonialArea from "./testimonial-area";
 
@@ -48,7 +49,8 @@ const HomeOne = () => {
       <main className="fix">
         <div className="common-width">
           <HeroArea />
-          {/* <VideoArea /> */}
+          <Section />  
+          <VideoArea />
             {/* <Firstbg /> 
             */}
       {/* <BreadcrumbSeven /> */}

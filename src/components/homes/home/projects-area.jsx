@@ -21,7 +21,7 @@ const ProjectsArea = () => {
     dots: true,       // Enable dot navigation
     arrows: false,    // Disable arrows
     autoplay: true,   // Enable autoplay
-    autoplaySpeed: 3000, // Time between slide transitions (in ms)
+    autoplaySpeed:2000, // Time between slide transitions (in ms)
     customPaging: function (i) {
       return (
         <div

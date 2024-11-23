@@ -1,64 +1,109 @@
-import { AppContext } from "@/src/context/ContextProvider";
-import VideoPopup from "@/src/modals/video-popup";
-import React, { useState, useRef, useContext } from "react";
+// components/VideoArea/index.jsx
+'use client'
+import React, { useState, useRef, useContext } from 'react'
+// import { X } from 'lucide-react'
 
-const VideoArea = () => {
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
-  const videoEl = useRef(null);
-
-  const { handleMouseEnter = () => {}, handleMouseLeave = () => {} } = useContext(AppContext) || {};
-
+// VideoPopup Component
+const VideoPopup = ({ isVideoOpen, setIsVideoOpen, videoId }) => {
   return (
     <>
-      <div className="tp-vedio-area p-relative pt-120">
-        <div className="container-fluid">
-          <div className="row justify-content-center">
-            <div className="col-xl-10">
-              <div className="tp-vedio-sction-box pb-70">
-                <h4 className="tp-vedio-title">
-                  The best customer relationship <br />
-                  management platform for just <br />
-                  about everything
-                </h4>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12">
-              <div className="tp-vedio-wrap">
-                <a
-                  className="popup-video tp-cursor-point-area"
-                  onClick={() => setIsVideoOpen(true)}
-                  onMouseEnter={handleMouseEnter}
-                  onMouseLeave={handleMouseLeave}
-                >
-                  <video
-                    className="play-video"
-                    id="myVideo"
-                    autoPlay
-                    loop
-                    playsInline
-                    muted
-                    alt="All the devices"
-                    src="https://videocdn.cdnpk.net/videos/8e9b0e80-9c40-570a-9ecd-bdddac0f1508/horizontal/previews/clear/large.mp4?token=exp=1732353129~hmac=be6dc24d6db6b839c529e0496673019b33cf48035c74e2ed9a89665fd93ec544"
-                    ref={videoEl}
-                  ></video>
-                </a>
-              </div>
+      {isVideoOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
+          <div className="relative w-full max-w-4xl mx-4">
+            <button
+              onClick={() => setIsVideoOpen(false)}
+              className="absolute -top-10 right-0 text-white hover:text-gray-300"
+            >
+              <X size={24} />
+            </button>
+            <div className="relative pt-[56.25%]">
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
-      </div>
+      )}
+    </>
+  )
+}
 
-      {/* video modal start */}
-      <VideoPopup
-        isVideoOpen={isVideoOpen}
-        setIsVideoOpen={setIsVideoOpen}
-        videoId={"_RpLvsA1SNM"}
-      />
-      {/* video modal end */}
+// Main VideoArea Component
+const VideoArea = () => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false)
+  const videoEl = useRef(null)
+  const [isHovered, setIsHovered] = useState(false)
+
+  const handleMouseEnter = () => {
+    setIsHovered(true)
+  }
+
+  const handleMouseLeave = () => {
+    setIsHovered(false)
+  }
+
+   return (
+    <>
+      <div
+        className="centralized-content"
+        style={{
+          width: '100%', // Full width for smaller screens
+          maxWidth: '806px', // Restrict width on larger screens
+          margin: '0 auto', // Center the container horizontally
+          textAlign: 'center', // Center text alignment
+          padding: '20px', // Add padding for better spacing
+        }}
+      >
+        <div
+          className="heading"
+          style={{
+            // fontFamily: 'geist',
+            fontWeight: '400',
+            lineHeight: '1.2',
+            fontSize: '82.5px', // Default font size for larger screens
+          }}
+        >
+          Welcome To Amiyon!
+        </div>
+        <div
+          className="content"
+          style={{
+            // fontFamily: 'geist',
+            fontWeight: '400',
+            lineHeight: '1.5',
+            fontSize: '20px', // Default font size for larger screens
+            marginTop: '10px',
+          }}
+        >
+          For over a decade, 
+          we've been crafting innovative digital solutions that help businesses grow, 
+          streamline operations, and achieve success. From websites to custom applications, 
+          we combine creativity and technology to deliver impactful results tailored to your unique needs.
+        </div>
+      </div>
+      <style jsx>{`
+        .centralized-content .heading {
+          font-size: 10vw; /* Adjust font size for smaller screens */
+        }
+        .centralized-content .content {
+          font-size: 4vw; /* Adjust font size for smaller screens */
+        }
+
+        @media (min-width: 768px) {
+          /* Larger screens */
+          .centralized-content .heading {
+            font-size: 82.5px; /* Fixed font size */
+          }
+          .centralized-content .content {
+            font-size: 20px; /* Fixed font size */
+          }
+        }
+      `}</style>
     </>
   );
 };
 
-export default VideoArea;
+export default VideoArea
