@@ -99,7 +99,7 @@ const ProjectsArea = () => {
         <h3
           className="ab-brand-title pb-5 mb-0"
           style={{
-            font: "geist",
+            // font: "geist",
             fontSize: "60px",
             color: "white",
             textAlign: "center",
@@ -115,7 +115,7 @@ const ProjectsArea = () => {
             color: "white",
             marginTop: "10px",
             fontSize: "16px",
-            font:"geist"
+            // font:"geist"
               // Smaller font for subheading
           }}
         >

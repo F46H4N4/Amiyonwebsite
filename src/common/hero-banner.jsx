@@ -43,7 +43,7 @@ const HeroBanner = ({ bg_img, title = "Join", subtitle = "Us" }) => {
                                     lineHeight: '1.2', // Control spacing between lines
                                     margin: '0', // Remove default margin
                                     color: `white`,
-                                    font:`geist`
+                                    // font:`geist`
                                 }}
                                 className="about-img-title"
                             >

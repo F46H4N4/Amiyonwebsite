@@ -45,8 +45,8 @@ const CtaArea = () => {
                                     <Image src={img} alt="theme-pure" />
                                  </div> */}
                                  <span className= "tp-section-subtitle-5 text-black">{sub_title}</span>
-                                 <h3 className= "tp-section-title-5 text-black pb-15" style = {{ font:"geist",fontFamily:"normal" }}>{title}</h3>
-                                 <p className= " mb-0 pb-30" style = {{ font:"geist" }}>{des}</p>
+                                 <h3 className= "tp-section-title-5 text-black pb-15" style = {{fontFamily:"normal" }}>{title}</h3>
+                                 <p className= " mb-0 pb-30" >{des}</p>
                                  <div className= "tp-plan-feature">
                                     {/* <ul>
                                         {feature_list.map((list, i) => <li key={i}><i className= "far fa-check"></i>{list}</li>)} 

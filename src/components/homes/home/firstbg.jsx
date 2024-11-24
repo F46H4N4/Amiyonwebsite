@@ -24,8 +24,8 @@ const hero_content = {
         { id: 1, cls: "tp-hero-shape-1", img: shape_1 },
         { id: 2, cls: "tp-hero-shape-2", img: shape_2 },
     ],
-    hero_title: <><span className='tp_title' style={{ color:"white" , font:"geist", fontSize:"80px" }}><span className='child'>Building Smart Futures</span></span> <br />
-        <span><span className='child' style={{ color:"white",fontSize:"20px" ,font:"geist",}}>Delivering Seamless Solutions for a Digital-First World</span></span> </>,
+    hero_title: <><span className='tp_title' style={{ color:"white", fontSize:"80px" }}><span className='child'>Building Smart Futures</span></span> <br />
+        <span><span className='child' style={{ color:"white",fontSize:"20px" }}>Delivering Seamless Solutions for a Digital-First World</span></span> </>,
     hero_shape_img: [
         { id: 1, cls: "1", img: shape_img_1 },
         { id: 2, cls: "2", img: shape_img_2 },

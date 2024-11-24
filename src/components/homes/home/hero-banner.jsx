@@ -43,7 +43,7 @@ const HeroBanner = ({ bg_img, title = "Building Smart Futures", subtitle = "Deli
                                     lineHeight: '1.2', // Control spacing between lines
                                     margin: '0', // Remove default margin
                                     color: `white`,
-                                    font: `geist`,
+                                    // font: `geist`,
                                     paddingTop:'15px'
                                 }}
                                 className="about-img-title"
@@ -57,7 +57,7 @@ const HeroBanner = ({ bg_img, title = "Building Smart Futures", subtitle = "Deli
                                     lineHeight: '1.2', // Control spacing between lines
                                     margin: '0', // Remove default margin
                                     color: `white`,
-                                    font:`geist`
+                                    // font:`geist`
                                 }}
                                 className="about-img-subtitle"
                             >

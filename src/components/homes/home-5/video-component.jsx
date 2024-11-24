@@ -48,7 +48,7 @@ const VideoPlayer = () => {
         loop // Added loop attribute
       >
         <source 
-          src="/assets/6917324_Motion Graphics_Motion Graphic_1920x1080.mp4" 
+          src="/assets/5405013_Coll_wavebreak_Icon_1280x720.mp4" 
           type="video/mp4"
         />
         Your browser does not support the video tag.

@@ -53,7 +53,7 @@ const OfficeLocation = () => {
                     <h5 className="contact-info-title-sm">
                       <Link href="#">{item.location}</Link>
                     </h5>
-                    <p style={{ font:'geist',fontSize:'16px',lineHeight:'24px',color:'black'}}>{item.address}</p>
+                    <p style={{ fontSize:'16px',lineHeight:'24px',color:'black'}}>{item.address}</p>
                   </div>
                 </div>
               </div>
