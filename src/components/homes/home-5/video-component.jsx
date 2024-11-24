@@ -32,18 +32,22 @@ const VideoPlayer = () => {
   return (
     <div style={{
       height: '587px',
-      width: '100%'
+      width: '100%',
+
     }}>
       <video 
         ref={videoRef}
         style={{
           width: '100%',
           height: '587px',
-          objectFit: 'cover'
+          objectFit: 'cover',
+          paddingTop: '74px',
+          paddingBottom: '74px'
+
         }}
-        controls
+        // controls
         autoPlay
-        muted
+        // muted
         playsInline
         loop // Added loop attribute
       >

@@ -45,7 +45,7 @@ const CtaArea = () => {
                                     <Image src={img} alt="theme-pure" />
                                  </div> */}
                                  <span className= "tp-section-subtitle-5 text-black">{sub_title}</span>
-                                 <h3 className= "tp-section-title-5 text-black pb-15" style = {{fontFamily:"normal" }}>{title}</h3>
+                                 <h3 className= "tp-section-title-5 text-black pb-15">{title}</h3>
                                  <p className= " mb-0 pb-30" >{des}</p>
                                  <div className= "tp-plan-feature">
                                     {/* <ul>
