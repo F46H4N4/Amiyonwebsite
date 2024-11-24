@@ -81,7 +81,7 @@ const ProjectsArea = () => {
   return (
       <div className="portfolio-area pt-50 pb-0"
           style={{
-        backgroundImage: 'url(assets/img/testimonial/projectbackground.jpg)', // Path to your background image
+        // backgroundImage: 'url(assets/img/testimonial/projectbackground.jpg)', // Path to your background image
         backgroundSize: 'cover', // Ensures the image covers the full container
         backgroundPosition: 'center', // Centers the background image
         backgroundRepeat: 'no-repeat', // Prevents the background from repeating

@@ -65,12 +65,12 @@ const HomeOne = () => {
           <CtaArea/>     
           <Trustportion />
           <ProjectArea/> 
+          <ClientSections/>
 
 
       {/* <FeatureArea /> */}
             {/* <TestimonialArea /> */}
-      {/* <ClientSections/>
-      <TestimonialArea2/> */}
+      {/* <TestimonialArea2/> */} 
       {/* <AdditionalSections /> */}
         {/* <CtaArea2 />      */}
         </div>
