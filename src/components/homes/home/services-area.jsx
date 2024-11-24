@@ -1,101 +1,87 @@
-'use client'
-import React, { useEffect, useRef } from 'react'
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useRef } from 'react';
+import useTitleAnimation from "@/src/hooks/useTitleAnimation";
+import service_data from '@/src/data/service-data';
+import RightArrow from '@/src/svg/right-arrow';
 
-const VideoArea = () => {
-  const titleRef = useRef(null);
+import img from "../../../../public/assets/img/service/sv-dashbord.png" 
 
-  useEffect(() => {
-    // Add animation class after component mounts
-    if (titleRef.current) {
-      titleRef.current.classList.add('animation-active');
-    }
-  }, []);
+const service_content = {
+    title: "Our Core Solutions & Services",
+    // sub_title: <>More than 15,000 companies trust and choose Itech</>,
 
-  return (
-    <>
-      <div 
-        ref={titleRef} 
-        className="tp-service__section-box text-center tp-title-anim"
-        style={{
-          width: '100%',
-          maxWidth: '806px',
-          margin: '0 auto',
-          padding: '20px',
-        }}
-      >
-        <h2 className="section-title tp__title_anime">
-          Welcome To Amiyon!
-        </h2>
-        <p className="section-text tp__text_anime">
-          For over a decade, 
-          we've been crafting innovative digital solutions that help businesses grow, 
-          streamline operations, and achieve success. From websites to custom applications, 
-          we combine creativity and technology to deliver impactful results tailored to your unique needs.
-        </p>
-      </div>
+    // bg_img: "/assets/img/service/sv-bg.jpg",
+    // title_2: <>Data Analysis <br /> Tools & Methods</>,
+    // des: <>Lorem Ipsum is simply dummy text <br /> of the printing</>,
+    // btn_text: "Work with Us",
 
-      <style jsx>{`
-        .tp-title-anim {
-          opacity: 0;
-          transform: translateY(100px);
-          transition: all 1s cubic-bezier(0.33, 1, 0.68, 1);
-        }
+    
 
-        .tp-title-anim.animation-active {
-          opacity: 1;
-          transform: translateY(0);
-        }
+}
+const {title, sub_title,bg_img, title_2, des, btn_text}  = service_content
 
-        .tp__title_anime {
-          opacity: 0;
-          transform: translateY(100px);
-          transition: all 1s cubic-bezier(0.33, 1, 0.68, 1);
-          transition-delay: 0.3s;
-        }
+const ServicesArea = () => {
+    let titleRef = useRef(null)
 
-        .animation-active .tp__title_anime {
-          opacity: 1;
-          transform: translateY(0);
-        }
+   useTitleAnimation(titleRef)
+    return (
+        <>
+            <div className="tp-service__area p-relative fix" style={{ background : 'white' }}>
+               <div className="tp-service__grey-shape grey-bg"></div>
+               <div className="container">
+                  <div className="row justify-content-center">
+                     <div className="col-lg-8">
+                        <div ref={titleRef} className="tp-service__section-box tp__title_anime mb-50 text-center tp-title-anim">
+                           <h2 className="tp-section-title">{title}</h2>
+                           <p>{sub_title}</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="row">
 
-        .tp__text_anime {
-          opacity: 0;
-          transform: translateY(100px);
-          transition: all 1s cubic-bezier(0.33, 1, 0.68, 1);
-          transition-delay: 0.5s;
-        }
+                    {service_data.slice(0,6).map((item, i)  => 
+                        <div key={i} className="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay={item.delay}>
+                            <div className="tp-service__item mb-30">
+                                <div className="tp-service__icon">
+                                    <Image src={item.img} alt="theme-pure" style ={{ width:'39px', height:'43.98px' }} />
+                                </div>
+                                <div className="tp-service__content">
+                                    <h3 className="tp-service__title-sm tp-yellow-color"><Link href="/service-details">{item.title}</Link></h3>
+                                    <p>{item.description}</p>
+                                </div>
+                                <div className="tp-service__link">
+                                    <Link href="/service-details">
+                                        <RightArrow /> 
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+{/* 
+                     <div className="col-xl-4 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1s">
+                        <div className="tp-service__dashboard" 
+                        style={{backgroundImage: `url(${bg_img})`}} >
+                           <div className="tp-service__top-content">
+                              <h3 className="tp-service__title-white">{title_2}</h3>
+                              <p>{des}</p>
+                              <Link className="tp-btn-orange tp-btn-hover alt-color-white" href="/project-details">
+                                 <span>{btn_text}</span>
+                                 <b></b>
+                              </Link>
+                           </div>
+                           <div className="tp-service__dashdboard-sm-img">
+                              <Image className="wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".7s" 
+                              src={img} alt="theme-pure" />
+                           </div>
+                        </div>
+                     </div> */}
 
-        .animation-active .tp__text_anime {
-          opacity: 1;
-          transform: translateY(0);
-        }
-
-        /* Heading Styles */
-        .section-title {
-          font-size: 82.5px;
-          font-weight: 400;
-          line-height: 1.2;
-          margin-bottom: 20px;
-        }
-
-        /* Paragraph Styles */
-        .section-text {
-          font-size: 20px;
-          font-weight: 400;
-          line-height: 1.5;
-        }
-
-        @media (max-width: 767px) {
-          .section-title {
-            font-size: 40px; // Adjust for mobile if needed
-          }
-          .section-text {
-            font-size: 16px; // Adjust for mobile if needed
-          }
-        }
-      `}</style>
-    </>
-  );
+                  </div>
+               </div>
+            </div>
+        </>
+    );
 };
 
-export default VideoArea;
+export default ServicesArea;
