@@ -105,12 +105,12 @@ const setting = {
 const FooterThree = () => {
     return (
         <>
-            <div className="footer-bottom-content tp-browser-bg-shape pt-50">
+            <div className="footer-bottom-content tp-browser-bg-shape">
                 <div className="tp-footer-slide pb-80">
                     <div className="container">
                         <div className="row">
                             <div className="col-12 text-center mb-4">
-                                <h2 className="footer-slider-heading">Our Clients</h2>
+                                <h2 className="footer-slider-heading" style={{ paddingTop:'74px' }}>Our Valuable Clients</h2>
                             </div>
                         </div>
                     </div>

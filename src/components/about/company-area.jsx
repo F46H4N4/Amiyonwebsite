@@ -24,7 +24,7 @@ const CompanyArea = () => {
           padding: '20px',
           boxSizing: 'border-box',
          color: "#620AD0",
-          paddingBottom :"74px"
+         //  paddingBottom :"74px"
           
         }}
       >

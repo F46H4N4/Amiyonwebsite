@@ -81,13 +81,13 @@ const ProjectsArea = () => {
   return (
       <div className="portfolio-area pt-50 pb-0"
           style={{
-        // backgroundImage: 'url(assets/img/testimonial/projectbackground.jpg)', // Path to your background image
+        backgroundImage: '', // Path to your background image
         backgroundSize: 'cover', // Ensures the image covers the full container
         backgroundPosition: 'center', // Centers the background image
         backgroundRepeat: 'no-repeat', // Prevents the background from repeating
       }}>
           <div className="container">
-        <div
+        <div className='tp-title-anim'
         style={{
           display: "flex",
           flexDirection: "column", // Stack content vertically
@@ -96,25 +96,25 @@ const ProjectsArea = () => {
           textAlign: "center",
         }}
       >
-        <h3
-          className="ab-brand-title pb-5 mb-0"
+        <h2
+          className="heading animate-slide-down"
           style={{
             // font: "geist",
             fontSize: "60px",
-            color: "white",
+            color: "black",
             textAlign: "center",
             wordBreak: "break-word",
             lineHeight: "1.4", // Adds spacing between lines
 // Ensures wrapping for small screens
           }}
         >
-          Our Latest <span style={{ whiteSpace: "nowrap" }}>Projects</span>
-        </h3>
+          Our Latest Projects
+        </h2>
         <h6
           style={{
-            color: "white",
+            color: "black",
             marginTop: "10px",
-            fontSize: "16px",
+            // fontSize: "16px",
             // font:"geist"
               // Smaller font for subheading
           }}

@@ -14,7 +14,7 @@ const VideoArea = () => {
           padding: '20px',
         }}
       >
-        <div
+        {/* <div
           className="heading animate-slide-down"
           style={{
             fontWeight: '400',
@@ -23,21 +23,21 @@ const VideoArea = () => {
           }}
         >
           Welcome To Amiyon!
-        </div>
+        </div> */}
 
         <div
           className="content animate-slide-up"
           style={{
             fontWeight: '400',
-            lineHeight: '1.5',
-            fontSize: '20px',
+            // lineHeight: '72px',
+            fontSize: '33px',
             marginTop: '10px',
+            fontFamily: 'var(--tp-ff-heading)',
+            color: '#1F1D1D'
+
           }}
         >
-          For over a decade, 
-          we've been crafting innovative digital solutions that help businesses grow, 
-          streamline operations, and achieve success. From websites to custom applications, 
-          we combine creativity and technology to deliver impactful results tailored to your unique needs.
+         Welcome to Amiyon, where we transform innovative ideas into powerful solutions. Our commitment to excellence drives us to deliver cutting-edge technology that empowers your business to thrive in the digital age
         </div>
       </div>
 

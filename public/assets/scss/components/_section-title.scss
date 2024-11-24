@@ -1,4 +1,64 @@
 @use '../utils' as *;
+// .portfolio-area{
+//     padding-top: 0 !important;
+//     padding-bottom: 0 !important;
+// }
+
+.portfolio-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    // opacity: 0;
+            /* Apply custom font */
+}
+
+.section-title-pre {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #333;
+    font-family: var(--tp-ff-heading); /* Apply custom font */
+}
+
+.section-title {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: #000;
+    font-family: var(--tp-ff-heading); /* Apply custom font */
+}
+
+.section-subtitle {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: var(--tp-ff-heading); /* Apply custom font */
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+}
+
 
 .tp-section-title{
     font-weight: 700;

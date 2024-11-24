@@ -35,6 +35,7 @@ import TestimonialArea2 from "@/src/components/homes/home-3/testimonial-area"
 import Trustportion from "@/src/components/about/company-area"
 import VideoArea from "@/src/components/homes/home-5/video-component";
 import Section from "@/src/components/homes/home-5/video-area";
+// import Portfolio from "./portfolio";
 
 // import TestimonialArea from "./testimonial-area";
 
@@ -56,7 +57,6 @@ const HomeOne = () => {
       {/* <BreadcrumbSeven /> */}
 
       {/* <HeroBanner bg_img="/assets/img/hero/herosection.jpg"/> */}
-
         <FunFactArea/> 
         <HeroSlider />
         <CtaArea3 />    
@@ -64,7 +64,10 @@ const HomeOne = () => {
         <ServicesArea />    
           <CtaArea/>     
           <Trustportion />
-          <ProjectArea/> 
+
+          <Portfolio />
+
+          {/* <ProjectArea/>  */}
           <ClientSections/>
 
 
