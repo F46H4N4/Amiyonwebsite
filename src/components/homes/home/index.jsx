@@ -52,32 +52,28 @@ const HomeOne = () => {
           <HeroArea />
           <Section />  
           <VideoArea />
-            {/* <Firstbg /> 
+          <FunFactArea /> 
+          <HeroSlider />
+          <ServicesArea />
+          <CtaArea3 />
+          <Trustportion />
+          <Portfolio />
+          <ClientSections />
+          <CtaArea/>     
+
+          </div>
+      {/* <ProjectArea/>  */}
+
+       {/* <Firstbg /> 
             */}
       {/* <BreadcrumbSeven /> */}
 
       {/* <HeroBanner bg_img="/assets/img/hero/herosection.jpg"/> */}
-        <FunFactArea/> 
-        <HeroSlider />
-        <CtaArea3 />    
-
-        <ServicesArea />    
-          <CtaArea/>     
-          <Trustportion />
-
-          <Portfolio />
-
-          {/* <ProjectArea/>  */}
-          <ClientSections/>
-
-
       {/* <FeatureArea /> */}
             {/* <TestimonialArea /> */}
       {/* <TestimonialArea2/> */} 
       {/* <AdditionalSections /> */}
         {/* <CtaArea2 />      */}
-        </div>
-
       {/* <AdditionalSections2 /> */}
       <Connect />
       </main> 

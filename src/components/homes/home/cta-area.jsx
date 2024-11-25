@@ -1,78 +1,105 @@
 import React from 'react';
-
-import girlworking from "../../../../public/assets/img/feature/hifi.png";
-import plan_img_1 from "../../../../public/assets/img/about/ourstory.png"
-import plan_img_2 from "../../../../public/assets/img/plan/plan-2.png"
-import plan_img_3 from "../../../../public/assets/img/plan/plan-3.png"
-import plan_img_4 from "../../../../public/assets/img/plan/plan-4.png"
-import plan_img_5 from "../../../../public/assets/img/plan/plan-5.png"
-import plan_img_6 from "../../../../public/assets/img/plan/plan-6.png"
 import Image from 'next/image';
 
-import img from "../../../../public/assets/img/cta/cta-title-icon-1.png";
+import plan_img_1 from "../../../../public/assets/img/feature/hifi.png";
 
-const cta_content  ={
-    img_box : [
-        {id:1, img: girlworking, cls: "1",},
-        // {id:2, img: plan_img_2, cls: "2 d-none d-sm-block",},
-        // {id:3, img: plan_img_3, cls: "3 d-none d-sm-block",},
-        // {id:4, img: plan_img_4, cls: "4",},
-        // {id:5, img: plan_img_5, cls: "5",},
-        // {id:6, img: plan_img_6, cls: "6",},
-    ],
-    // sub_title: "What we Offer",
-    title: <><span>Why We're the Right Choice</span></>,
-    des: <> At Amiyon, we prioritize your success by delivering high-quality,
-                                    customized software solutions that meet your unique needs.
-                                    Our client-focused approach ensures every project is handled with care,
-                                    keeping your goals and budget in mind. <br /></>,
-    feature_list: [
-        "Billable",
-        "Manual time entries",
-        "Services",
-    ]
+const cta_content = {
+  img_box: [
+    { id: 1, img: plan_img_1, cls: "1" },
+  ],
+  title: (
+    <>
+      Why We're the Right Choice
+    </>
+  ),
+  des: (
+    <>
+      At Amiyon, we pride ourselves on being a trusted partner for businesses seeking effective software solutions. We deliver tailored, high-quality products that meet your unique needs and goals.  Our experienced team takes the time to understand your challenges, creating functional, scalable, and efficient solutions. We guarantee timely delivery and adherence to budget while maintaining the highest quality standards.
+    </>
+  ),
+};
 
-}
-const {img_box, sub_title, title, des, feature_list}  = cta_content
-
+const { img_box, title, des } = cta_content;
 
 const CtaArea = () => {
-    return (
-        <>
-            <div className= "tp-plan-area tp-plan-space"  style={{ background :'white',paddingBottom : "74px" }}>
-                  <div className= "container">
-                     <div className= "row align-items-center">
-                      
-                        <div className= "col-xl-5 col-lg-5 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
-                           <div className= "tp-plan-section-box">
-                                 {/* <div className= "tp-plan-section-icon pb-30">
-                                    <Image src={img} alt="theme-pure" />
-                                 </div> */}
-                                 <span className= "tp-section-subtitle-5 text-black">{sub_title}</span>
-                                 <h3 className= "tp-section-title-5 text-black pb-15">{title}</h3>
-                                 <p className= " mb-0 pb-30">{des}</p>
-                                 <div className= "tp-plan-feature">
-                                    {/* <ul>
-                                        {feature_list.map((list, i) => <li key={i}><i className= "far fa-check"></i>{list}</li>)} 
-                                    </ul> */}
-                                 </div>
-                           </div> 
-                        </div>
+  return (
+    <div
+      className="tp-plan-area tp-plan-space"
+      style={{
+        background: "white",
+        display: "flex",
+        justifyContent: "flex-start",  // Align to the left
+        alignItems: "center",          // Center vertically
+        height: "100vh",               // Ensure full viewport height
+        paddingLeft: "5%",            // Add left padding to shift content to the right
+      }}
+    >
+      <div className="container">
+        <div className="row justify-content-center align-items-center">
+          {/* Text Content Section */}
+          <div
+            className="col-xl-5 col-lg-5 order-2 order-lg-1 wow tpfadeRight"
+            data-wow-duration=".9s"
+            data-wow-delay=".5s"
+          >
+            <div className="tp-plan-section-box">
+              <h3
+                className="tp-section-title-5 text-black pb-15"
+                style={{
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
+                  fontWeight: 500,
+                  lineHeight: "1.5",
+                  fontSize: "36px",
+                  marginBottom: "20px",
+                  maxWidth: "400px",
+                  // textAlign: "center",  // Center the title text
+                }}
+              >
+                {title}
+              </h3>
+              <p
+                className="mb-0 pb-30"
+                style={{
+                  fontSize: "16px",
+                  lineHeight: "1.8",
+                  color: "#333",
+                  marginBottom: "30px",
+                  maxWidth: "400px",
+                  textAlign: "justify",  // Center the description text
+                }}
+              >
+                {des}
+              </p>
+            </div>
+          </div>
 
-                          <div className= "col-xl-7 col-lg-7 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".3s">
-                            <div className= "tp-plan-img-box p-relative">
-                            {img_box.map((item, i)  => 
-                                <div key={i} className={`tp-plan-img-${item.cls}`}>
-                                    <Image src={item.img} alt="theme-pure" />
-                                </div>          
-                            )} 
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-        </>
-    );
+          {/* Image Section */}
+          <div
+            className="col-xl-7 col-lg-7 order-1 order-lg-2 wow tpfadeLeft"
+            data-wow-duration=".9s"
+            data-wow-delay=".3s"
+          >
+            <div className="tp-plan-img-box p-relative">
+              {img_box.map((item, i) => (
+                <div key={i} className={`tp-plan-img-${item.cls}`}>
+                  <Image
+                    src={item.img}
+                    alt="plan image"
+                    style={{
+                      width: "100%",
+                      maxWidth: "557px",
+                      height: "auto",
+                      borderRadius: "20px",
+                    }}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default CtaArea;

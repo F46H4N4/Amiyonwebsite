@@ -21,7 +21,7 @@ const cta_content  ={
     ],
     // sub_title: "What we Offer",
     title: <><span>Business solutions made with purpose</span></>,
-    des: <>Experience enhanced efficiency and achieve digital success with our innovative services.<br /></>,
+    des: <>At Amiyon, we are committed to creating business solutions with a clear purpose: empowering organizations to achieve their goals efficiently and effectively. Our innovative services are designed to simplify complex processes, enhance productivity, and drive digital success for businesses across various industries.At Amiyon, we create purposeful business solutions that empower organizations to achieve their goals efficiently. Our innovative services simplify processes, boost productivity, and drive digital success across various industries.<br /></>,
     feature_list: [
         "Billable",
         "Manual time entries",
@@ -42,19 +42,42 @@ const CtaArea3 = () => {
                             <div className= "tp-plan-img-box p-relative">
                             {img_box.map((item, i)  => 
                                 <div key={i} className={`tp-plan-img-${item.cls}`}>
-                                    <Image src={item.img} alt="theme-pure" />
+                                    <Image src={item.img} alt="theme-pure"  style={{
+                                    width: '100%',
+                                    maxWidth: '557px',
+                                    height: 'auto',
+                                    borderRadius: '20px',
+                                    //   boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)',
+                                    }}/>
                                 </div>          
                             )} 
                            </div>
                         </div>
                         <div className= "col-xl-5 col-lg-5 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".5s">
-                           <div className= "tp-plan-section-box">
+                           <div className= "tp-plan-section-box" >
                                  {/* <div className= "tp-plan-section-icon pb-30">
                                     <Image src={img} alt="theme-pure" />
                                  </div> */}
-                                 <span className= "tp-section-subtitle-5 text-black">{sub_title}</span>
-                                 <h3 className= "tp-section-title-5 text-black pb-15">{title}</h3>
-                                 <p className= " mb-0 pb-30">{des}</p>
+                        <span className= "tp-section-subtitle-5 text-black">{sub_title}</span>
+                            <h3 className= "tp-section-title-5 text-black pb-15" style={{
+                                fontFamily: 'Plus Jakarta Sans, sans-serif',
+                                fontWeight: 500,
+                                lineHeight: '1.3',
+                                fontSize: '36px',
+                                marginBottom: '20px',
+                                maxWidth:'400px'
+                                }} >{title}</h3>
+                                <p className=" mb-0 pb-30"
+                                style={{
+                                            
+                                fontSize: "16px",
+                                lineHeight: "1.8", // Consistent spacing between lines
+                                color: "#333",
+                                marginBottom: "30px",
+                                maxWidth: "400px", // Matches the title width
+                                textAlign: "justify", // Ensures alignment across both edges
+                                }}
+                                >{des}</p>
                                  <div className= "tp-plan-feature">
                                     {/* <ul>
                                         {feature_list.map((list, i) => <li key={i}><i className= "far fa-check"></i>{list}</li>)} 

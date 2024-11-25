@@ -106,7 +106,7 @@ const FooterThree = () => {
     return (
         <>
             <div className="footer-bottom-content tp-browser-bg-shape">
-                <div className="tp-footer-slide pb-80">
+                <div className="tp-footer-slide">
                     <div className="container">
                         <div className="row">
                             <div className="col-12 text-center mb-4">

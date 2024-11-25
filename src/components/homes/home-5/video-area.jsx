@@ -1,107 +1,56 @@
-'use client'
-import React, { useState, useRef } from 'react'
+'use client';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
 
 const VideoArea = () => {
+  const contentRef = useRef(null); // Reference for content div
+
+  useEffect(() => {
+    // Animation using GSAP
+    const tl = gsap.timeline({ defaults: { ease: 'power2.out', duration: 0.8 } });
+
+    // Fade-in animation for the container
+    tl.from('.centralized-content', { opacity: 0, duration: 1 });
+
+    // Slide-up animation for content
+    tl.fromTo(
+      contentRef.current,
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, delay: 0.3 }
+    );
+  }, []);
+
   return (
     <>
       <div
-        className="centralized-content animate-fade-in"
+        className="centralized-content"
         style={{
           width: '100%',
-          maxWidth: '806px',
+          maxWidth: '750px',
           margin: '0 auto',
           textAlign: 'center',
           padding: '20px',
+          paddingTop: '74px',
+          paddingBottom :'74px'
+
         }}
       >
-        {/* <div
-          className="heading animate-slide-down"
-          style={{
-            fontWeight: '400',
-            lineHeight: '1.2',
-            fontSize: '82.5px',
-          }}
-        >
-          Welcome To Amiyon!
-        </div> */}
-
         <div
-          className="content animate-slide-up"
+          ref={contentRef}
+          className="content"
           style={{
-            fontWeight: '400',
-            // lineHeight: '72px',
-            fontSize: '33px',
+            fontWeight: '500',
+            fontSize: '42px',
             marginTop: '10px',
+            lineHeight :'1.1',
             fontFamily: 'var(--tp-ff-heading)',
-            color: '#1F1D1D'
-
+            color: 'var(--tp-common-black)',
           }}
         >
-         Welcome to Amiyon, where we transform innovative ideas into powerful solutions. Our commitment to excellence drives us to deliver cutting-edge technology that empowers your business to thrive in the digital age
+          Welcome to Amiyon, where we transform innovative ideas into powerful solutions.
+          {/* Our commitment to excellence drives us to deliver cutting-edge technology that empowers your business to thrive in the digital age. */}
         </div>
       </div>
-
-      <style jsx>{`
-        .centralized-content .heading {
-          font-size: 10vw;
-        }
-        .centralized-content .content {
-          font-size: 4vw;
-        }
-
-        @media (min-width: 768px) {
-          .centralized-content .heading {
-            font-size: 82.5px;
-          }
-          .centralized-content .content {
-            font-size: 20px;
-          }
-        }
-
-        /* Animations */
-        .animate-fade-in {
-          animation: fadeIn 1s ease-out forwards;
-        }
-
-        .animate-slide-down {
-          opacity: 0;
-          animation: slideDown 0.8s ease-out forwards;
-          animation-delay: 0.2s;
-        }
-
-        .animate-slide-up {
-          opacity: 0;
-          animation: slideUp 0.8s ease-out forwards;
-          animation-delay: 0.5s;
-        }
-
-        @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-
-        @keyframes slideDown {
-          from {
-            transform: translateY(-50px);
-            opacity: 0;
-          }
-          to {
-            transform: translateY(0);
-            opacity: 1;
-          }
-        }
-
-        @keyframes slideUp {
-          from {
-            transform: translateY(30px);
-            opacity: 0;
-          }
-          to {
-            transform: translateY(0);
-            opacity: 1;
-          }
-        }
-      `}</style>
     </>
   );
 };
