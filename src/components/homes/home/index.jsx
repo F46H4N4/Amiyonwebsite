@@ -24,7 +24,7 @@ import HeaderFive from "@/src/layout/headers/header-5";
 // project/index.jsx
 import BreadcrumbSeven from "@/src/common/breadcrumbs/breadcrumb-7";
 import Portfolio from "@/src/components/project/portfolio";
-import TestimonialArea from "@/src/components/homes/home-2/testimonial-area"
+import TestimonialArea from "@/src/common/testimonial-area"
 import ProjectArea from "./projects-area";
 import RankArea from "./rank-area";
 import ServicesArea from "./services-area";
@@ -48,7 +48,7 @@ const HomeOne = () => {
       <div id="smooth-wrapper">
       <div id="smooth-content">
       <main className="fix">
-        <div className="common-width">
+        {/* <div className="common-width"> */}
           <HeroArea />
           <Section />  
           <VideoArea />
@@ -59,9 +59,10 @@ const HomeOne = () => {
           <Trustportion />
           <Portfolio />
           <ClientSections />
-          <CtaArea/>     
+          <CtaArea />   
+          <TestimonialArea />    
 
-          </div>
+          {/* </div> */}
       {/* <ProjectArea/>  */}
 
        {/* <Firstbg /> 

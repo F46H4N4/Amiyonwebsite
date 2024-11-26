@@ -56,12 +56,12 @@ const CountArea = () => {
         className="text-center mb-12"
         style={{ paddingBottom: '74px' }}
       >
-        <span className="text-blue-600 font-medium text-sm uppercase tracking-wider">
+        {/* <span className="text-blue-600 font-medium text-sm uppercase tracking-wider">
           Our Numbers Speak
         </span>
-        <h2 className="text-4xl font-bold mt-2 mb-4">Proven Track Record</h2>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Delivering excellence through years of dedication, successful projects, and satisfied clients
+        <h4 className="text-4xl font-bold mt-2 mb-4" style={{ fontSize:'33px' }}>Proven Track Record</h4> */}
+        <p className="text-600 max-w-2xl mx-auto" style={{ color:'black',fontSize:'18px' }}>
+            Manufacturing software that goes beyond the benchmark
         </p>
       </div>
 

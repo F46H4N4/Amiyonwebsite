@@ -70,20 +70,18 @@ const Portfolio = () => {
 
 
 
-                  <div className="col-xl-12">
-                    <div className="portfolio-heading">
-                        <span className="section-title-pre">
-                            LATEST WORKS
-                        </span>
-                        <h2 className="section-title">
+                <div className="col-xl-12">
+                    <div className="portfolio-heading" style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
+                        <h4 className="section-title" style={{ fontSize: '50px', marginBottom: '10px' }}>
                             Our Latest Projects
-                        </h2>
-                        <p className="section-subtitle">
-                            Discover our most recent innovations and creative solutions that showcase 
+                        </h4>
+                        <p className="section-subtitle" style={{ textAlign: 'center', width: '80%', maxWidth: '600px', fontSize: '16px', color: '#6c757d' }}>
+                            Discover our most recent innovations and creative solutions that showcase
                             our commitment to excellence and cutting-edge design.
                         </p>
                     </div>
                 </div>
+
                 </div>
 
                 <div 

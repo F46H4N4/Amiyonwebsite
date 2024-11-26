@@ -13,6 +13,7 @@ import CtaArea from "../contact/cta-area";
 import FaqArea from "../homes/home-2/faq-area";
 import ServiceArea from "./service-area";
 import Portfolio from "@/src/components/blog/portfolio";
+import Trustportion from "@/src/components/about/company-area"
 
 
 const Service = () => {
@@ -28,8 +29,9 @@ const Service = () => {
             {/* <HeroBanner title="Our" subtitle="Services" bg_img="/assets/img/service/servicefirstpic.png" /> */}
             <Portfolio />
             <ServiceArea /> 
+            <Trustportion />
 
-            <FunFactArea />
+            {/* <FunFactArea /> */}
             {/* <CardArea style_service={true} /> */}
             {/* <SalesArea style_service={true} />
             <TestimonialArea />

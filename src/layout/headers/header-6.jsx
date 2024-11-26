@@ -8,7 +8,7 @@ import NavMenu from './nav-menu';
 
 
 import logo_black from "../../../public/assets/img/logo/amiyon-logo.png";
-import logo_white from "../../../public/assets/img/logo/amiyon-logo.png";
+import logo_white from "../../../public/assets/img/logo/amiyon-white-logo.png";
 
 
 const HeaderSix = ({ style_2 = false }) => {

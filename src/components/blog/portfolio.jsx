@@ -59,8 +59,8 @@ const Portfolio = () => {
                   <div className="row grid blog-grid-inner" ref={dataRef}>
                
                      {items.map((item, i ) => 
-                        <div key={i} data-index={i} className="col-xl-4 col-lg-6 col-md-6 mb-30 grid-item cat1 cat4 cat3 cat5">
-                           <div className="tp-blog-item">
+                        <div key={i} data-index={i} className="col-xl-4 col-lg-6 col-md-6 mb-30 grid-item cat1 cat4 cat3 cat5"style={{ paddingTop:'30px',paddingLeft:'15px' }}>
+                           <div className="tp-blog-item" style={{ height:'414px' }}>
                               <div className="tp-blog-thumb fix">
                                  <Link href="/blog-details"><Image src={item.thumb_img} /></Link>
                               </div>
@@ -73,9 +73,9 @@ const Portfolio = () => {
                                        <span>{item.date}</span>
                                     </div> */}
                                  </div>
-                                 <div className="tp-blog-title-box">
-                                    <Link className="tp-blog-title-sm" style={{ fontSize: '20px', fontWeight:'600px',color:"#393939", lineHeight:'33px', letterSpace:'33px' }}
-                                       href={`${item.slug}-blog-details`}>{item.title}</Link>
+                                 <div className="tp-blog-title-box" style={{ fontSize: '20px', fontWeight:'bold',color:"#393939", lineHeight:'33px', letterSpace:'33px' }}>
+                                    <Link className="tp-blog-title-sm" 
+                                       href={`${item.slug}-service-details`}>{item.title}</Link>
                                  </div>
                                  <div className="tp-blog-author-info-box d-flex align-items-center">
                                     <div className="tp-blog-avata">

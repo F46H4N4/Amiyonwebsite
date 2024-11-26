@@ -7,7 +7,7 @@ import useBreadcrumbTitleAnime from "@/src/hooks/useBreadcrumbTitleAnime";
 import shape_1  from "../../../public/assets/img/breadcrumb/breadcrumb-shape-1.png";
 import shape_2  from "../../../public/assets/img/breadcrumb/breadcrumb-shape-2.png";
 import shape_3  from "../../../public/assets/img/breadcrumb/breadcrumb-3.png";
-import shape_4  from "../../../public/assets/img/breadcrumb/breadcrumb-sub-1.png";
+import shape_4  from "../../../public/assets/img/breadcrumb/manwithlap.png";
  
 
 
@@ -18,7 +18,7 @@ const BreadcrumbTwo = ({ title, innertitle, team_details, career_details }) => {
  useTitleAnimation(subtitleRef);
   return (
     <>
-      <div className="breadcrumb__area breadcrumb-height p-relative blue-bg-2">
+      <div className="breadcrumb__area breadcrumb-height p-relative servicebg"style={{ backgroundColor:'#0288DA' }}>
         <div className="breadcrumb__shape-1">
           <Image src={shape_1} alt="theme-pure" />
         </div>
@@ -70,7 +70,7 @@ const BreadcrumbTwo = ({ title, innertitle, team_details, career_details }) => {
             </div>
             <div className="col-xl-4 col-lg-5 col-lg-4 text-center text-md-end">
               <div className="breadcrumb__img p-relative text-start z-index">
-                <Image className="z-index-3" src={shape_3} alt="theme-pure" />
+                <Image className="z-index-3" src={shape_2} alt="theme-pure" />
                 <div
                   className="breadcrumb__sub-img wow tpfadeUp"
                   data-wow-duration=".9s"

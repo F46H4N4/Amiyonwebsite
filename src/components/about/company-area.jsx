@@ -17,7 +17,7 @@ const CompanyArea = () => {
     return (
        <>
          <div className="trust row align-items-center justify-content-center"   style={{
-          maxWidth: '690px', // Restrict the width
+          maxWidth: '710px', // Restrict the width
           margin: '0 auto', // Center align the container
           textAlign: 'center', // Center text alignment for children
           background: 'white',

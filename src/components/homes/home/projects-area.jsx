@@ -96,11 +96,11 @@ const ProjectsArea = () => {
           textAlign: "center",
         }}
       >
-        <h2
+        <h4
           className="heading animate-slide-down"
           style={{
             // font: "geist",
-            fontSize: "60px",
+            fontSize: "33px",
             color: "black",
             textAlign: "center",
             wordBreak: "break-word",
@@ -109,7 +109,7 @@ const ProjectsArea = () => {
           }}
         >
           Our Latest Projects
-        </h2>
+        </h4>
         <h6
           style={{
             color: "black",

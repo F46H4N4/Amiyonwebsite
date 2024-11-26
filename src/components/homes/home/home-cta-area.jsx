@@ -9,21 +9,20 @@ const cta_content = {
   ],
   title: (
     <>
-      Your Trusted IT Solutions <br />
+    Your Trusted IT Solutions 
       Partner
     </>
   ),
   des: (
     <>
-      Amiyon Solutions is a trusted provider of IT services, committed to
+        Amiyon Solutions is a trusted provider of IT services, committed to
       excellence and delivering high-quality products that exceed client
       expectations while staying within budget. Our tailored approach meets
       your unique business needs, helping you achieve your goals efficiently.
       We prioritize customer satisfaction and focus on innovative, scalable,
       and reliable IT solutions that drive success. Partner with Amiyon
       Solutions for a seamless and rewarding digital journey, combining
-      expertise, dedication, and a customer-centric approach.
-    </>
+      expertise, dedication, and a customer-centric approach.    </>
   ),
 };
 
@@ -35,13 +34,15 @@ const CtaArea = () => {
       className="tp-plan-area tp-plan-space"
       style={{
         background: "white",
-        paddingTop: "74px",
-        paddingBottom: "74px",
-
+        display: "flex",
+        justifyContent: "flex-start",  // Align to the left
+        alignItems: "center",          // Center vertically
+        height: "100vh",               // Ensure full viewport height
+        paddingLeft: "5%",            // Add left padding to shift content to the right
       }}
     >
       <div className="container">
-        <div className="row align-items-center">
+        <div className="row justify-content-center align-items-center">
           {/* Text Content Section */}
           <div
             className="col-xl-5 col-lg-5 order-2 order-lg-1 wow tpfadeRight"
@@ -58,6 +59,7 @@ const CtaArea = () => {
                   fontSize: "36px",
                   marginBottom: "20px",
                   maxWidth: "400px",
+                  // textAlign: "center",  // Center the title text
                 }}
               >
                 {title}
@@ -70,7 +72,7 @@ const CtaArea = () => {
                   color: "#333",
                   marginBottom: "30px",
                   maxWidth: "400px",
-                  textAlign: "justify",
+                  textAlign: "justify",  // Center the description text
                 }}
               >
                 {des}

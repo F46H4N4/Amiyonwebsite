@@ -33,7 +33,7 @@ const ServicesArea = () => {
                   <div className="row justify-content-center">
                      <div className="col-lg-8">
                         <div ref={titleRef} className="tp-service__section-box tp__title_anime mb-50 text-center tp-title-anim">
-                           <h2 className="tp-section-title">{title}</h2>
+                           <h4 className="tp-section-title" style={{ fontSize:'50px' }}>{title}</h4>
                            <p>{sub_title}</p>
                         </div>
                      </div>
