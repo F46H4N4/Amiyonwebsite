@@ -7,28 +7,28 @@ import shape_1 from "../../../public/assets/img/breadcrumb/breadcrumb-shape-1.pn
 import shape_2 from "../../../public/assets/img/breadcrumb/breadcrumb-shape-2.png";
 
 
-// breadcrumb our_service data
-const our_service = [
-    {
-        id: 1,
-        cls: "space-left-1", 
-        title: "CLIENT",
-        description: <>Microsoft App Holing Ltd, <br/> Australia Area</>
-    },
-    {
-        id: 2, 
-        cls: "space-left-2",
-        title: "Services",
-        description: <>October 23th, 2022 <br/> Release Started</>
-    },
-    {
-        id: 3, 
-        cls: "space-left-3",
-        title: "Project Date",
-        description: <>October 23th, 2022 <br/> Release Started</>
-    },
+// // breadcrumb our_service data
+// const our_service = [
+//     {
+//         id: 1,
+//         cls: "space-left-1", 
+//         title: "CLIENT",
+//         description: <>Microsoft App Holing Ltd, <br/> Australia Area</>
+//     },
+//     {
+//         id: 2, 
+//         cls: "space-left-2",
+//         title: "Services",
+//         description: <>October 23th, 2022 <br/> Release Started</>
+//     },
+//     {
+//         id: 3, 
+//         cls: "space-left-3",
+//         title: "Project Date",
+//         description: <>October 23th, 2022 <br/> Release Started</>
+//     },
 
-]
+// ]
 
 const BreadcrumbEight = () => {
    const { animeRef } = useBreadcrumbTitleAnime();
@@ -53,7 +53,7 @@ const BreadcrumbEight = () => {
                            </div>
                         </div>
                      </div>
-                     <div className="row g-0 z-index-3">
+                     {/* <div className="row g-0 z-index-3">
                         {our_service.map((item, i)  => 
                             <div key={i} className="col-xl-3 col-lg-3 col-md-6 mb-40 pd-border-right">
                                 <div className={`breadcrumb__client-info ${item.cls}`}>
@@ -73,7 +73,7 @@ const BreadcrumbEight = () => {
                               </div>
                            </div>
                         </div>
-                     </div>
+                     </div> */}
                   </div>
                </div>
             </div>

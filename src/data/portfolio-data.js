@@ -40,6 +40,7 @@ const portfolio_data = [
         thumb_img: thumb_img_2,
         brand_logo: brand_logo_2, 
         job_title: "DEVELOPMENT, E-COMMERCE",
+        slug:'akyas',
         title: <>AKyas</>,
         des: <>Akyas is a specialized online platform for packaged supplies.</>,
         delay: ".5s",

@@ -51,7 +51,7 @@ const ServicesArea = () => {
                                     <p>{item.description}</p>
                                 </div>
                                 <div className="tp-service__link">
-                                    <Link href="/service-details">
+                            <Link href={`${item.slug}-service-details`}>
                                         <RightArrow /> 
                                     </Link>
                                 </div>

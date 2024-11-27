@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import thumb_img from "../../../public/assets/img/project/pd-img-1.jpg"
+import thumb_img from "../../../public/assets/img/project/akyasblock.png"
 
 const ThumbArea = () => {
   return (
