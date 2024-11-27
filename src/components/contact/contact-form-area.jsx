@@ -25,9 +25,9 @@ const ContactFormArea = () => {
                      <div className="col-xl-5 col-lg-6">
                         <div className="contact-form-left">
                            <div className="contact-form-section-box pb-80">
-                              <h5 className="inner-section-subtitle" style ={{ color:"black" }}>{sub_title}</h5>
-                              <h4 className="tp-section-title pb-10" style = {{ fontFamily : "normal" }}>{tilte}</h4>
-                              <p>{info}</p>
+                              <h5 className="inner-section-subtitle" >{sub_title}</h5>
+                              <h4 className="tp-section-title pb-10" >{tilte}</h4>
+                              <p style={{ fontFamily:"Plus Jakarta Sans" }}>{info}</p>
                            </div>
                            <div className="contact-form-social-box p-relative">
                               <div className="contact-form-social-item">

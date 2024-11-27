@@ -44,7 +44,7 @@ const ContactUsForm = () => {
           <div className="col-xxl-12">
             <div className="postbox__comment-input mb-30">
               <textarea className="textareaText" required></textarea>
-              <span className="floating-label-2">Message...</span>
+              <span className="floating-label-2">Message</span>
             </div>
           </div>
           <div className="col-xxl-12">

@@ -11,7 +11,7 @@ const office_data = [
     cls: "",
     img: img_1,
     // location: "Colombia",
-    address: <>Sougandhikam Villa, First  <br /> Thrissur, 680308,Kerala<br></br> 680308,Kerala.</>,
+    address: <>Sougandhikam Villa,Infopark<br /> Thrissur, 680308,Kerala</>,
   },
   {
     id: 2,
