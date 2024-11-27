@@ -39,8 +39,8 @@ const VideoArea = () => {
           ref={contentRef}
           className="content"
           style={{
-            fontWeight: '500',
-            fontSize: '42px',
+            fontWeight: '200',
+            fontSize: '34px',
             marginTop: '10px',
             lineHeight :'1.1',
             fontFamily: 'var(--tp-ff-heading)',

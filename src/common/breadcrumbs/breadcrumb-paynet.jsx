@@ -1,84 +1,150 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import useBreadcrumbTitleAnime from "@/src/hooks/useBreadcrumbTitleAnime";
 import Link from 'next/link';
-import Image from 'next/image';
-
-import shape_1 from "../../../public/assets/img/breadcrumb/breadcrumb-shape-1.png";
-import shape_2 from "../../../public/assets/img/breadcrumb/breadcrumb-shape-2.png";
-
-
-// breadcrumb our_service data
-const our_service = [
-    {
-        id: 1,
-        cls: "space-left-1", 
-        title: "CLIENT",
-        description: <>Microsoft App Holing Ltd, <br/> Australia Area</>
-    },
-    {
-        id: 2, 
-        cls: "space-left-2",
-        title: "Services",
-        description: <>October 23th, 2022 <br/> Release Started</>
-    },
-    {
-        id: 3, 
-        cls: "space-left-3",
-        title: "Project Date",
-        description: <>October 23th, 2022 <br/> Release Started</>
-    },
-
-]
 
 const BreadcrumbEight = () => {
    const { animeRef } = useBreadcrumbTitleAnime();
-    return (
-        <>
-            <div className="breadcrumb__area breadcrumb-height-3 p-relative blue-bg-2 fix">
-               <div className="breadcrumb__shape-1">
-                  <Image src={shape_1} alt="theme-pure" />               
-               </div>
-               <div className="breadcrumb__shape-2">
-                  <Image src={shape_2} alt="theme-pure" />               
-               </div>
-               <div className="container">
-                  <div className="breadcrumb__content-wrap">
-                     <div className="row justify-content-center">
-                        <div className="col-xl-12">
-                           <div className="breadcrumb__content z-index-3 mb-60">
-                              <div className="breadcrumb__text wow tpfadeIn" data-wow-duration=".9s" data-wow-delay=".6s">
-                                 <span>Development,  App Design</span>
-                              </div>
-                              <h3 ref={animeRef} className="breadcrumb__title anime_text">Gopaynet</h3>
-                           </div>
-                        </div>
+   const [displayedText, setDisplayedText] = useState('');
+
+   const text = "Paynet: Simplifying digital payments and receipts for seamless business growth.";
+
+   useEffect(() => {
+      let i = 0;
+      const typingEffect = setInterval(() => {
+         if (i < text.length) {
+            // Use setState with a function to ensure no repetition
+            setDisplayedText(prevText => text.slice(0, i + 1));
+            i++;
+         } else {
+            clearInterval(typingEffect);
+         }
+      }, 50);
+
+      return () => {
+         clearInterval(typingEffect);
+      };
+   }, [text]);
+
+   return (
+      <>
+         <div
+            className="breadcrumb__area breadcrumb-height-3 p-relative fix"
+            style={{
+               height: '571px',
+               overflow: 'hidden',
+               position: 'relative',
+            }}
+         >
+            <video
+               autoPlay
+               muted
+               loop
+               style={{
+                  position: 'absolute',
+                  top: '0',
+                  left: '0',
+                  width: '100%',
+                  height: '571px',
+                  objectFit: 'cover',
+                  zIndex: -2,
+               }}
+            >
+               <source src="/assets/gopaynet.mp4" type="video/mp4" />
+               Your browser does not support the video tag.
+            </video>
+
+            <div
+               style={{
+                  position: 'absolute',
+                  top: '0',
+                  left: '0',
+                  width: '100%',
+                  height: '571px',
+                  backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                  zIndex: -1,
+               }}
+            ></div>
+
+            <div className="container">
+               <div className="breadcrumb__content-wrap">
+                  <div className="row justify-content-center">
+                     <div className="col-xl-12">
+                        <div className="breadcrumb__content z-index-3 mb-60">
+                      <div className="breadcrumb__text wow tpfadeIn" data-wow-duration=".9s" data-wow-delay=".6s">
+                        <span>Development,  App Design 
+                           {/* <Link href="#" className="text-white" style={{ lineHeight: '1.6', marginLeft: '10px' }}>
+                              See Live
+                           </Link> */}
+                        </span>
                      </div>
-                     <div className="row g-0 z-index-3">
-                        {our_service.map((item, i)  => 
-                            <div key={i} className="col-xl-3 col-lg-3 col-md-6 mb-40 pd-border-right">
-                                <div className={`breadcrumb__client-info ${item.cls}`}>
-                                <span>{item.title}</span>
-                                <p>{item.description}</p>
-                                </div>
-                            </div>                        
-                        )} 
-                        <div className="col-xl-3 col-lg-3 col-md-6 mb-40 pd-border-right">
-                           <div className="breadcrumb__client-info space-left-4">
-                              <span>Project Date</span>
-                              <div className="breadcrumb__live-btn">
-                                 <Link className="tp-btn-inner-border" href="#">
-                                    See live 
-                                    <i className="fal fa-arrow-up"></i>
-                                </Link>
-                              </div>
+                           <h3 ref={animeRef} className="breadcrumb__title anime_text">
+                              Paynet
+                           </h3>
+                           <div
+                              className="breadcrumb__text wow tpfadeIn"
+                              data-wow-duration=".9s"
+                              data-wow-delay=".6s"
+                           >
+                              <h6
+                                 style={{
+                                    color: 'white',
+                                    lineHeight: '1.8',
+                                    fontSize: '18px',
+                                    fontWeight: 'normal',
+                                    width: '100%',
+                                    maxWidth: '800px',
+                                    whiteSpace: 'normal',
+                                    wordWrap: 'break-word',
+                                    overflow: 'hidden',
+                                 }}
+                                 className="typewriter-text"
+                              >
+                                 {displayedText}
+                                 <span className="cursor">|</span>
+                              </h6>
                            </div>
+                        
                         </div>
                      </div>
                   </div>
                </div>
+               <Link href="https://gopaynet.com/"
+                   style={{
+                     color: '#ffffff',
+                     fontWeight: 'bold',
+                     textDecoration: 'none',
+                     border: '2px solid white',
+                     padding: '10px 20px',
+                     textAlign: 'center',
+                     display: 'inline-block',
+                     borderRadius: '30px',
+                     transition: 'all 0.3s ease', // Smooth transition for hover effect
+                  }}
+                  className="custom-link"
+                  >
+                  See Live
+                  </Link>
             </div>
-        </>
-    );
+         </div>
+
+         <style jsx>{`
+            .cursor {
+               animation: blink 0.7s infinite;
+               margin-left: 2px;
+               font-weight: bold;
+            }
+
+            @keyframes blink {
+               0%, 100% {
+                  opacity: 1;
+               }
+               50% {
+                  opacity: 0;
+               }
+            }
+         `}</style>
+      </>
+   );
 };
 
 export default BreadcrumbEight;
